@@ -1,13 +1,31 @@
 ﻿<html>
-	<head></>
+	<head>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>>
+    </head>
 	<body>
 		<section>
-            <p id="tabcontrol">
-                <a href="#tabpage1">1号館</a>
-                <a href="#tabpage2">2号館</a>
-                <a href="#tabpage3">23号館</a>
-            </p>
-		</section>
+            <script type="text/javascript">
+                $('#area').change(function(){
+                    var r = $('option:selected').val();
+                    console.log(r);
+                })
+            </script>
+            <select id="area">
+                    <option value="0">---選択して下さい---</option>
+                <option>1号館</option>
+                    <option value="1">3号館</option>
+                    <option value="2">5号館</option>
+                    <option value="3">6号館</option>
+                    <option value="4">7号館</option>
+                    <option value="5">8号館</option>
+                    <option value="6">10号館</option>
+                    <option value="7">12号館</option>
+                    <option value="8">17号館</option>
+                    <option value="9">20号館</option>
+                    <option value="10">21号館</option>
+                    <option value="11">22号館</option>
+            </select>
+        </section>
         <section>
             <img src="map.jpg" alt="学内map" />
         </section>
