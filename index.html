@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <title>KIT オープンキャンパス</title>
 </head>
 <body>
@@ -107,10 +108,36 @@
                 </tr>
             </table>              
         </div>   
-      </section>
+     </section>
 
+     <section class="kit_map">
+        <div class = "kitmap">
+            <h2 class = map>教室場所</h2>
+            <script type="text/javascript">
+                    $('#area').change(function(){
+                        var r = $('option:selected').val();
+                        console.log(r);
+                    })
+            </script>
+            <select id="area">
+                <option value="0">---選択して下さい---</option>
+                <option>1号館</option>
+                <option value="1">3号館</option>
+                <option value="2">5号館</option>
+                <option value="3">6号館</option>
+                <option value="4">7号館</option>
+                <option value="5">8号館</option>
+                <option value="6">10号館</option>
+                <option value="7">12号館</option>
+                <option value="8">17号館</option>
+                <option value="9">20号館</option>
+                <option value="10">21号館</option>
+                <option value="11">22号館</option>
+            </select>
+        </div>
+    </section>
     <section>
-        <!-- 学校全体マップセクション-->
+        <img src="map.jpg" alt="学内map" />
     </section>
 
     <section>
