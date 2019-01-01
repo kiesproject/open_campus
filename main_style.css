@@ -1,0 +1,164 @@
+html, body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+/*--------
+header setting
+--------*/
+header {
+    width: 100%;
+}
+
+#title_area,
+#header_nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#title_area {
+
+}
+
+#header_nav {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+#header_nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    letter-space: 10px;
+}
+
+#header_nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#header_nav ul li a {
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid white; /*underline*/
+    /*border: 1px solid white;*/
+}
+
+/*--------
+section setting
+--------*/
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container > section {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    background-color: white;
+}
+
+.section_inner {
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.section_title {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid red; /*underline*/
+}
+
+.section_info {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section_info h3 {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid blue; /*underline*/
+}
+
+/*table setting*/
+.section_inner table {
+    text-align: center;
+    width: 100%;
+    margin: -10px auto 10px auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.section_inner table thead,
+.section_inner table tbody {
+    width: 100%;
+}
+
+.section_inner table tr {
+    width: 100%;
+}
+
+.section_inner table > thead tr {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+.section_inner table > tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.section_inner table > tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.section_inner table thead tr {
+
+}
+
+.section_inner table th,
+.section_inner table td {
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+/*--------
+times section setting
+--------*/
+
+/*--------
+class_room section setting
+--------*/
+
+/*--------
+kit_map section setting
+--------*/
+#area_select,
+#map_image {
+    display: block;
+    width: 100%;
+}
+
+#area_select {
+}
+
+#map_image {
+}
+
