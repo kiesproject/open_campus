@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: #F4F4F4;/*background color*/
 }
 
 /*--------
@@ -29,8 +29,9 @@ header {
 }
 
 #header_nav {
-    background-color: black;
+    background-color: #1D4874;/*theme color 2*/
     color: white;
+    font-weight: bold;
     padding: 5px;
 }
 
@@ -39,7 +40,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    letter-space: 10px;
+    letter-spacing: 10px;
 }
 
 #header_nav ul li {
@@ -79,7 +80,7 @@ section setting
 .section_title {
     text-align: center;
     display: inline-block;
-    border-bottom: 2px solid red; /*underline*/
+    border-bottom: 2px solid #F1F104; /*underline*//*acsent color*/
 }
 
 .section_info {
@@ -93,7 +94,7 @@ section setting
 .section_info h3 {
     text-align: center;
     display: inline-block;
-    border-bottom: 2px solid blue; /*underline*/
+    border-bottom: 2px solid #F1F104; /*underline*//*acsent color*/
 }
 
 /*table setting*/
@@ -115,9 +116,10 @@ section setting
 }
 
 .section_inner table > thead tr {
-    background-color: darkblue;
+    background-color: #1D4874;/*theme color 2*/
     color: white;
     font-weight: bold;
+    font-size: larger;
 }
 
 .section_inner table > tbody tr:nth-child(odd) {
