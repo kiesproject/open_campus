@@ -1,13 +1,68 @@
+/*--------
+theme color setting
+--------*/
+
+body {
+    background-color: #F4F4F4; /*background color*/
+}
+
+#header_nav {
+    background-color: #1D4874; /*theme color 2*/
+    /*
+    background-color: #1aac2f; !*theme color 2*!
+    */
+}
+
+
+.section_inner table > thead tr {
+    background-color: #1D4874;  /*theme color 2*/
+    /*
+    background-color: #1aac2f; !*theme color 2*!
+    */
+}
+
+h1 .underline {
+    border-bottom: 20px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -20px;
+}
+
+h2 .underline {
+    border-bottom: 15px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -15px;
+}
+
+h3 .underline {
+    border-bottom: 10px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -10px;
+}
+
+h4 .underline {
+    border-bottom: 5px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -5px;
+}
+
+#header_nav,
+.section_inner table > thead tr {
+    color: #FFFFFF;
+}
+
+/*--------
+general setting
+--------*/
 html, body {
     position: absolute;
     width: 100%;
     top: 0;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+html {
 }
 
 body {
-    background-color: #F4F4F4;/*background color*/
+    overflow-y: hidden;
 }
 
 /*--------
@@ -24,13 +79,22 @@ header {
     text-align: center;
 }
 
+#title_area h1,
+#title_area h3 {
+    display: inline-block;
+}
+
+.underline {
+    height: 0;
+    margin : 0 -15px;
+    width: inherit;
+}
+
 #title_area {
 
 }
 
 #header_nav {
-    background-color: #1D4874;/*theme color 2*/
-    color: white;
     font-weight: bold;
     padding: 5px;
 }
@@ -80,7 +144,6 @@ section setting
 .section_title {
     text-align: center;
     display: inline-block;
-    border-bottom: 2px solid #F1F104; /*underline*//*acsent color*/
 }
 
 .section_info {
@@ -94,7 +157,6 @@ section setting
 .section_info h3 {
     text-align: center;
     display: inline-block;
-    border-bottom: 2px solid #F1F104; /*underline*//*acsent color*/
 }
 
 /*table setting*/
@@ -116,8 +178,6 @@ section setting
 }
 
 .section_inner table > thead tr {
-    background-color: #1D4874;/*theme color 2*/
-    color: white;
     font-weight: bold;
     font-size: larger;
 }
@@ -164,3 +224,12 @@ kit_map section setting
 #map_image {
 }
 
+/*--------
+blossom setting
+--------*/
+.blossom {
+    z-index: -1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
