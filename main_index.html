@@ -2,36 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="side-menu.css" />
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="menu.js"></script>
     <title>KIT オープンキャンパス</title>
 </head>
 <body>
 <!--header始まり    -->
-    <script>
-        function display(menu)
-        {
-            if(document.getElementById(menu).style.display == "none")
-            {
-                document.getElementById("menu").style.display="block";
-            }
-            else
-            {
-                document.getElementById("menu").style.display="none";
-            }
-        }
-    </script>
 <header>
     <div id="title_area">
         <h1>KIESオープンキャンパス情報サイト</h1>
         <h3>KIESプロジェクトによるオープンキャンパス情報サイト</h3>
     </div>
-    <nav>
-        
-            <a href="javascript:display('menu')">メニュー▼</a>
-        
-        <ul style="display: none" id="menu">
+    <div class="overlay" id="js_overlay"></div>
+    
+    <div class="side_menu_btn" id="js_sideMenuBtn">
+        <div class="ellipsis-v">
+        <span class="point top"></span>
+        <span class="point mid"></span>
+        <span class="point bot"></span>
+        </div>
+    </div>
+    
+    <nav style="display: none" class="side_menu">
+        <ul>
             <li>
-                <a>タイムテーブル</a>
+                <a class="side">タイムテーブル</a>
             </li>
             <li>
                 <a>教室の場所</a>
