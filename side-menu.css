@@ -146,9 +146,20 @@
 .side-open .side_menu_btn:hover .top{
     background: #ccc;
 }
-.side_time:hover, .side_room:hover, .side_map:hover{
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+li:hover{
+    
     opacity: inherit;
-    background: #fbb;
+    background: #f66;
+}
+
+li{
+    list-style: none;
 }
 
 /* サイドメニューオープン */
