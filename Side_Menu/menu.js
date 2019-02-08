@@ -1,26 +1,27 @@
 $(function(){
     var menu_list = $(".menu_list > li");
-    var $body = $('body');
+    var body = $('body');
     $('#js_sideMenuBtn').on('click', function(){
-        $body.toggleClass('side-open');
+        body.toggleClass('side-open');
         $(".side_menu").slideToggle();
         $('#js_overlay, .side_time').on('click', function(){
-            $body.removeClass('side-open');
+            body.removeClass('side-open');
             $('.side_menu').hide();
         });
 
     });
-    $(".side").mouseover();
     //menu_listがクリックされた時の処理
     menu_list.click(function(){
         var menu = $(li).attr("href");
         var scroll_point = $(menu).offset().top;
+        
         body.animate({
             scrollTop: scroll_point
         }, 300);
     });
+    
     $('#menu_time, #menu_room, #menu_map').on('click', function(){
-                $body.removeClass('side-open');
+        body.removeClass('side-open');
         $('.side_menu').hide();
     });
 });
