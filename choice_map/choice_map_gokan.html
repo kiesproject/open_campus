@@ -14,41 +14,52 @@
     <script type="text/javascript">
 
     var map;
+    var marker;
     var latlng = new Array();
 
     function init() {
         
-      latlng[0] = new google.maps.LatLng(36.530442, 136.629382);
+        latlng[0] = new google.maps.LatLng(36.530442, 136.629382);
      
-      latlng[1] = new google.maps.LatLng(36.531802, 136.628244);
+        latlng[1] = new google.maps.LatLng(36.531802, 136.628244);
       
-      latlng[2] = new google.maps.LatLng(36.531240, 136.629425);
+        latlng[2] = new google.maps.LatLng(36.531240, 136.629425);
         
-      // Mapコンストラクタ用のMapOptions
-      var opts = {
-        zoom: 19,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latlng[0] // 初期値は秋葉原
-      };
+            // Mapコンストラクタ用のMapOptions
+        var opts = {
+            zoom: 19,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: latlng[0] 
+        };
 
-      // getElementById("map")の"map"は、body内の<div id="map">より
-      map = new google.maps.Map(document.getElementById("map"), opts);
-
-      var sel = document.getElementById("myselect");
-      sel.index = 1;
-      map.controls[google.maps.ControlPosition.TOP_CENTER].push(sel);
-
-      google.maps.event.addDomListener(sel, 'click', function() {
+        // getElementById("map")の"map"は、body内の<div id="map">より
+        map = new google.maps.Map(document.getElementById("map"), opts);
+        
+        marker = new google.maps.Marker({
+            position:latlng[0],
+            map:map
         });
+
+        var sel = document.getElementById("myselect");
+        sel.index = 1;
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(sel);
+
+        google.maps.event.addDomListener(sel, 'click', function() {
+            });
+        
     }
 
     function selectchanged() {
 
       // selectのオブジェクトを取得
-      var sl = document.getElementById("sel");
-      var value = sl.options[sl.selectedIndex].value;
+        var sl = document.getElementById("sel");
+        var value = sl.options[sl.selectedIndex].value;
 
-      map.setCenter(latlng[value]);
+        map.setCenter(latlng[value]);
+        marker = new google.maps.Marker({
+            position:latlng[value],
+            map:map
+        });
     }
     //]]>
     </script>
