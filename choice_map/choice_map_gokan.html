@@ -19,11 +19,13 @@
 
     function init() {
         
-        latlng[0] = new google.maps.LatLng(36.530442, 136.629382);
-     
+        latlng[0] = new google.maps.LatLng(36.531498, 136.627418);
+        
         latlng[1] = new google.maps.LatLng(36.531802, 136.628244);
-      
-        latlng[2] = new google.maps.LatLng(36.531240, 136.629425);
+        
+        latlng[2] = new google.maps.LatLng(36.530442, 136.629382);
+     
+        latlng[3] = new google.maps.LatLng(36.531240, 136.629425);
         
             // Mapコンストラクタ用のMapOptions
         var opts = {
@@ -37,7 +39,8 @@
         
         marker = new google.maps.Marker({
             position:latlng[0],
-            map:map
+            map:map,
+            icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
         });
 
         var sel = document.getElementById("myselect");
@@ -70,7 +73,7 @@
 
         <div id="myselect">
         <select id="sel" onChange="selectchanged()">
-          <option value="0" selected>8号館</option>
+          <option value="0" selected>LC</option>
           <option value="1">7号館</option>
           <option value="2">8号館</option>
           <option value="3">23号館</option>
