@@ -10,23 +10,30 @@
     </style>
     <script>
         function initMap(){
+            //geolocaion APIに対応している場合
             if(navigator.geolocation){
+                //位置情報が取得できる場合
                 navigator.geolocation.getCurrentPosition(
+                    //true
                     function(position){
+                        //現在地の緯度経度
                         var my_latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
                         var mapOptions = {
                             zoom:14,
                             center:my_latlng
                         };
+                        //mapに地図を埋め込む
                         var map = new google.maps.Map(
                             document.getElementById("map"),mapOptions
                         );
+                        //自分の位置のマーカー
                         var my_marker = new google.maps.Marker({
                             map:map,
                             position:my_latlng,
                             icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
                         });
                     },
+                    //false
                     function(error){
                        switch(error.code){
                         case 1:// PERMISSION_DENIED
@@ -45,32 +52,32 @@
                     }
                 );    
             }
+            //APIが対応していない場合
             else{
                 alert("この端末では位置情報が取得できません");   
             }
-            var latlng = new Array(5);
-            latlng[0] = new google.maps.LatLng(36.531498, 136.627418);
-            latlng[1] = new google.maps.LatLng(36.531802, 136.628244);
-            latlng[2] = new google.maps.LatLng(36.530442, 136.629382);
-            latlng[3] = new google.maps.LatLng(36.531240, 136.629425);
-            var sel = document.getElementById("myselect");
-            //sel.index = 1;
-           //map.controls[google.maps.ControlPosition.TOP_CENTER].push(sel);
-            google.maps.event.addDomListener(sel,'click',function(){
-                });         
         }
+        //selectが変更された場合の処理
         function selectchanged(){
+            //号館の座標を登録しておくリスト
+            var latlng = new Array(4);
+            latlng[0] = new google.maps.LatLng(36.531498, 136.627418);//LC（デバッグ用）
+            latlng[1] = new google.maps.LatLng(36.531802, 136.628244);//7号館
+            latlng[2] = new google.maps.LatLng(36.530442, 136.629382);//8号館
+            latlng[3] = new google.maps.LatLng(36.531240, 136.629425);//23号館
+            //デバッグ用
             console.log("selectchanged");
+            //selの値を取得
             var sl = document.getElementById("sel");
+            //selの選択された番号を取得
             var value = document.myselect.sel.selectedIndex;
+            //mapに書き込み
             var map = new google.maps.Map(document.getElementById("map"),{
                 zoom:14,
                 center:latlng[value]
                 
             });
-            
-            my_map.setCener(latlang[value]);
-            
+            //マーカーの位置の設定
             var marker = new google.maps.Marker({
                 position:latlng[value],
                 map:map
