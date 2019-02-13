@@ -9,6 +9,8 @@
     }
     </style>
     <script>
+        var my_size = 17;
+        var my_latlng;
         function initMap(){
             //geolocaion APIに対応している場合
             if(navigator.geolocation){
@@ -17,9 +19,9 @@
                     //true
                     function(position){
                         //現在地の緯度経度
-                        var my_latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                        my_latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
                         var mapOptions = {
-                            zoom:14,
+                            zoom:my_size,
                             center:my_latlng
                         };
                         //mapに地図を埋め込む
@@ -73,7 +75,7 @@
             var value = document.myselect.sel.selectedIndex;
             //mapに書き込み
             var map = new google.maps.Map(document.getElementById("map"),{
-                zoom:14,
+                zoom:my_size,
                 center:latlng[value]
                 
             });
@@ -82,6 +84,13 @@
                 position:latlng[value],
                 map:map
             });
+            
+            var marker = new google.maps.Marker({
+                position:my_latlng,
+                map:map,
+                icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
+            });
+            
             
             
         }
