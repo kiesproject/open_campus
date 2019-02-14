@@ -1,4 +1,4 @@
-var my_size = 17.5;//拡大サイズ
+var my_size = 16;//拡大サイズ
 var my_latlng; //現在位置用の変数
 var marker;
 
@@ -84,7 +84,6 @@ function initMap(){
         var map = new google.maps.Map(document.getElementById("map"),{
             zoom:my_size,
             center:latlng[value]
-
         });
         //マーカーの位置の設定
         marker = new google.maps.Marker({
