@@ -4,7 +4,9 @@ function initMap(){
     //geolocaion APIに対応している場合
     if(navigator.geolocation){
             //位置情報が取得できる場合
-            navigator.geolocation.getCurrentPosition(
+            //getXCurrentPosition 一度のみ現在位置を取得 watchPositionの場合は連続的に取得
+            //navigator.geolocation.getCurrentPosition(
+            navigator.geolocation.watchPosition(
                 //true
                 function(position){
                     //現在地の緯度経度
