@@ -1,4 +1,4 @@
-var my_size = 17;//拡大サイズ
+var my_size = 17.5;//拡大サイズ
 var my_latlng; //現在位置用の変数
 var marker;
 
@@ -67,7 +67,7 @@ function initMap(){
         latlng[0] = new google.maps.LatLng(36.531498, 136.627418);//LC（デバッグ用）
         latlng[1] = new google.maps.LatLng(36.531802, 136.628244);//7号館
         latlng[2] = new google.maps.LatLng(36.530442, 136.629382);//8号館
-        latlng[3] = new google.maps.LatLng(36.531240, 136.629425);//21号館
+        latlng[3] = new google.maps.LatLng(36.529946, 136.629155);//21号館
         latlng[4] = new google.maps.LatLng(36.531240, 136.629425);//23号館
         latlng[5] = new google.maps.LatLng(36.531603, 136.629389);//24号館
         latlng[6] = new google.maps.LatLng(36.530900, 136.629489);//チャレンジラボ
