@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>KIT オープンキャンパス</title>
-    <style>
-        #map{
-            height:300px;
-            width: 400px;
-        }
-    </style>
     <link rel="stylesheet" type="text/css" href="main_style.css">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script src="main_thema.js"></script>
@@ -119,18 +113,22 @@
             </table>              
         </div>
     </section>
-    <section id="kit_map"> >
+    <section id="kit_map"> >i
         <h2 class = "class_map">教室場所</h2>
         <form name="myselect">
             <select id="sel" onChange="selectchanged()">
                 <option value="0" selected>号館選択</option>
                 <option value="1">7号館</option>
                 <option value="2">8号館</option>
+                <option value="3">21号館</option>
                 <option value="3">23号館</option>
                 <option value="4">24号館</option>
+                <option value="5">challenge Lab</option>
+                <option value="6">41号館 夢工房</option>
             </select>
         </form>
         <div id="map"></div>
+        <img src="gakunai_map.png" width="500" height="400" title="学内マップ">
     </section>    
 </div>
 <!--footer 始まり    -->
