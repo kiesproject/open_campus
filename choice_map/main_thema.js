@@ -1,5 +1,7 @@
 var my_size = 17;//拡大サイズ
 var my_latlng; //現在位置用の変数
+var marker;
+
 function initMap(){
     //geolocaion APIに対応している場合
     if(navigator.geolocation){
@@ -73,12 +75,12 @@ function initMap(){
 
         });
         //マーカーの位置の設定
-        var marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             position:latlng[value],
             map:map
         });
-
-        var marker = new google.maps.Marker({
+        //現在地のマーカの表示
+        marker = new google.maps.Marker({
             position:my_latlng,
             map:map,
             icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
