@@ -19,12 +19,22 @@ function initMap(){
                     };
                     //mapに地図を埋め込む
                     var map = new google.maps.Map(document.getElementById("map"),mapOptions);
-                                //自分の位置のマーカー
+                    //自分の位置のマーカーウィンドウ
+                    var my_infowin = new google.maps.InfoWindow({content:"あなたの位置"});
+                    //自分の位置のマーカー
                     var my_marker = new google.maps.Marker({
                         map:map,
                         position:my_latlng,
                         icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
                     });
+                    //mouseoverイベントを取得するListenerを追加
+                    google.maps.event.addListener(my_marker,'mouseover',function(){
+                        my_infowin.open(map,my_marker);    
+                    });
+                    //mouseoutイベントを取得するListenerを追加
+                    google.maps.event.addListener(my_marker,'mouseout',function(){
+                        my_infowin.close();    
+                    })
                 },
                 //false
                 function(error){
