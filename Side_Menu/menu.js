@@ -12,7 +12,8 @@ $(function(){
     });
     //menu_listがクリックされた時の処理
     menu_list.click(function(){
-        var scroll_point = $(menu).offset().top;
+        var menu = $(this).attr("href");
+        var scroll_point = $(menu).offset();
         
         body.animate({
             scrollTop: scroll_point
