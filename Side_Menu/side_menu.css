@@ -1,4 +1,4 @@
-.overlay{
+#overlay{
     content: '';
     visibility: hidden;
     position: fixed;
@@ -12,7 +12,7 @@
     transition: all .5s ease;
     z-index: 3;
 }
-.overlay::after{
+#overlay::after{
     content: "CLOSE";
     visibility: hidden;
     position: fixed;
@@ -29,18 +29,18 @@
     transition: all .5s ease;
 }
 
-.side-open .overlay{
+.side_open #overlay{
     visibility: visible;
     cursor: pointer;
     background: rgba(0,0,0,.7);
 }
-.side-open .overlay::after{
+.side_open #overlay::after{
     visibility: visible;
     color: rgba(255,255,255,.8);
 }
 
 /* サイドメニュー */
-.side_menu{
+#side_menu{
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +56,7 @@
 }
 
 /* 開閉用ボタン */
-.side_menu_btn{
+#side_menu_btn{
     position: fixed;
     top: 20px;
     right: 20px;
@@ -67,7 +67,7 @@
     z-index: 4;
 }
 
-.ellipsis-v{
+.ellipsis_v{
     position: relative;
     display: block;
     cursor: pointer;
@@ -75,7 +75,7 @@
     height: 40px;
 }
 
-.ellipsis-v .point{
+.ellipsis_v .point{
     position: absolute;
     left: 0;
     right: 0;
@@ -88,33 +88,33 @@
     transition: all .3s;
 }
 
-.ellipsis-v .point.top{
+.ellipsis_v .point.top{
     top: 0;
 }
 
-.ellipsis-v .point.mid{
+.ellipsis_v .point.mid{
     top: 0;
     bottom: 0;
 }
 
-.ellipsis-v .point.bot{
+.ellipsis_v .point.bot{
     bottom: 0;
 }
 
-.side_menu_btn:hover .top{
+#side_menu_btn:hover .top{
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
 }
 
-.side_menu_btn:hover .bot{
+#side_menu_btn:hover .bot{
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
 }
 
-.side-open .side_menu_btn:hover .top,
-.side-open .top{
+.side_open #side_menu_btn:hover .top,
+.side_open .top{
     width: 56px;
     height: 1px;
     background: #fff;
@@ -125,12 +125,12 @@
     transform: rotate(45deg);
 }
 
-.side-open .mid{
+.side_open .mid{
     opacity: 0;
 }
 
-.side-open .side_menu_btn:hover .bot,
-.side-open .bot{
+.side_open #side_menu_btn:hover .bot,
+.side_open .bot{
     width: 56px;
     height: 1px;
     background: #fff;
@@ -142,8 +142,8 @@
     transform: rotate(-45deg);
 }
 
-.side-open .side_menu_btn:hover .bot,
-.side-open .side_menu_btn:hover .top{
+.side_open #side_menu_btn:hover .bot,
+.side_open #sied_menu_btn:hover .top{
     background: #ccc;
 }
 
@@ -163,7 +163,7 @@ li{
 }
 
 /* サイドメニューオープン */
-.side-open .overlay{
+.side_open #overlay{
     -webkit-transform: translate3d(300px, 0, 0);
     transform: translate3d(300px, 0, 0);
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="side-menu.css" />
+    <link rel="stylesheet" href="side_menu.css" />
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script src="menu.js"></script>
     <title>KIT オープンキャンパス</title>
@@ -14,18 +14,18 @@
         <h1>KIESオープンキャンパス情報サイト</h1>
         <h3>KIESプロジェクトによるオープンキャンパス情報サイト</h3>
     </div>
-    <div class="overlay" id="js_overlay"></div>
+    <div id="overlay"></div>
     
-    <div class="side_menu_btn" id="js_sideMenuBtn">
-        <div class="ellipsis-v">
-            <span class="point top"></span>
-            <span class="point mid"></span>
-            <span class="point bot"></span>
+    <div id="side_menu_btn">
+        <div class="ellipsis_v">
+        <span class="point top"></span>
+        <span class="point mid"></span>
+        <span class="point bot"></span>
         </div>
     </div>
     
-    <nav style="display: none" class="side_menu">
-        <ul class="menu_list">
+    <nav style="display: none" id="side_menu">
+        <ul id="menu_list">
             <li>
                 <a href="#times" id="menu_time">タイムテーブル</a>
             </li>
@@ -64,7 +64,7 @@
     
     <section　id = "class_room">
           <!-- 教室場所セクション -->
-          <div class="class_room-text">
+          <div class="class_room_text">
             <h2 class = class_room>学科別教室場所</h2>
             <h3>工学部</h3>
             <table>
