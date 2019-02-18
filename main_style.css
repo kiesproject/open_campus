@@ -158,6 +158,10 @@ section setting
     text-align: center;
     display: inline-block;
 }
+.section_info caption {
+    text-align: center;
+    display: inline-block;
+}
 
 /*table setting*/
 .section_inner table {
