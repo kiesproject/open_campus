@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>KIT オープンキャンパス</title>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <script src="main_thema.js"></script>    
+    <script src="main_thema.js"></script>
+    <script src="./pullDown.js"></script>    
 </head>
 <body>
 <!--header始まり    -->
@@ -34,18 +35,32 @@
         <div class= "timeschedule_text">
         <h2 class = "time_schedule">タイムスケジュール</h2>
             <!--  タイムスケジュールセクション    -->
-            <table>
+            <table class="timetable">
                 <tr>
                     <td>時間</td>
                     <td>教室</td>
                 </tr>
                 <tr>
                     <td>10:30 ～ 12:00</td>
-                    <td>オリエンテーション</td>
+                    <td>
+                        <!-- <img id="icon" src="./icon.png" width="20px" height="20px"> -->
+                        <p>オリエンテーション</p>
+                        <ul>
+                            <li>詳細</li>
+                            <li>詳細</li>
+						</ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>13:00 ～ 14:30</td>
-                    <td>各学科体験授業</td>
+                    <td>
+                        <!-- <img id="icon" src="./icon.png" width="20px" height="20px"> -->
+                        <p>各学科体験授業</p>
+                        <ul>
+                            <li>詳細</li>
+                            <li>詳細</li>
+                        </ul>
+                    </td>
                 </tr>
             </table>
         </div>
