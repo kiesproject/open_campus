@@ -2,7 +2,7 @@ $(function(){
     $('.timetable tr:gt(0) ul').hide();     //ロード初期の詳細は非表示
 
     //マウスカーソルが重なると背景色をグレーに
-    $('.timeTable tr:gt(0) p')
+    $('.timetable tr:gt(0) p')
         .mouseover(function(){
             $(this).css('background','grey');
         })
@@ -12,8 +12,8 @@ $(function(){
     
     //アイコン横の<p>要素のクリックで詳細を表示・非表示の切り替え
     $('.timetable tr:gt(0) p').click(function(){
-        if($(this).prev().attr('class') == 'selected'){
-            $(this).prev('#icon').removeClass('selected').animate( { opacity: 1 }, {
+        if($(this).prev().attr('id') == 'selected'){
+            $(this).prev('.icon').attr('id','').animate( { opacity: 1 }, {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({ transform: 'rotate(' + now * 0 + 'deg)' })
@@ -21,7 +21,7 @@ $(function(){
             });
             $(this).next('ul').hide(600);
         }else{
-            $(this).prev('#icon').addClass('selected').animate( { opacity: 1 }, {
+            $(this).prev('.icon').attr('id','selected').animate( { opacity: 1 }, {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({ transform: 'rotate(' + now * 90 + 'deg)' })
@@ -32,9 +32,9 @@ $(function(){
     });
 
     //アイコンクリックでも、詳細を表示・非表示の切り替え
-    $('.timetable #icon').click(function(){
-        if($(this).attr('class') == 'selected'){
-            $(this).removeClass('selected').animate( { opacity: 1 }, {
+    $('.timetable .icon').click(function(){
+        if($(this).attr('id') == 'selected'){
+            $(this).attr('id','').animate( { opacity: 1 }, {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({ transform: 'rotate(' + now * 0 + 'deg)' })
@@ -42,7 +42,7 @@ $(function(){
             });
             $(this).next().next('ul').hide(600);
         }else{
-            $(this).addClass('selected').animate( { opacity: 1 }, {
+            $(this).attr('id','selected').animate( { opacity: 1 }, {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({ transform: 'rotate(' + now * 90 + 'deg)' })
