@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KIT オープンキャンパス</title>
+    <link rel="stylesheet" type="text/css" href="main_style.css">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="main_theme.js"></script>
+    <script src="main_style.js"></script>
+</head>    
+<body>
+<!--header始まり    -->
+<header>
+    <div id="title_area">
+        <h1>KIESオープンキャンパス情報サイト</h1>
+        <h3>KIESプロジェクトによるオープンキャンパス情報サイト</h3>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a>タイムテーブル</a>
+            </li>
+            <li>
+                <a>教室の場所</a>
+            </li>
+            <li>
+                <a>学校マップ</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!--header 終わり  -->
+<div id="container">
+    <section id = "times">
+        <div class= "timeschedule_text">
+        <h2 class = "time_schedule">タイムスケジュール</h2>
+            <!--  タイムスケジュールセクション    -->
+            <table>
+                <tr>
+                    <td>時間</td>
+                    <td>教室</td>
+                </tr>
+                <tr>
+                    <td>10:30 ～ 12:00</td>
+                    <td>オリエンテーション</td>
+                </tr>
+                <tr>
+                    <td>13:00 ～ 14:30</td>
+                    <td>各学科体験授業</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section　id = "class_room">
+          <!-- 教室場所セクション -->
+          <div class="class_room-text">
+            <h2 class = "class_room">学科別教室場所</h2>
+            <h3>工学部</h3>
+            <table>
+                <tr>
+                    <th>学科名</th>
+                    <td>教室場所</td>
+                </tr>
+                <tr>
+                    <th>機械工学科</th>
+                    <td>教室:24.112</td>
+                </tr>
+                <tr>
+                    <th>航空システム工学科</th>
+                    <td>教室:23.112</td>                
+                </tr>
+                <tr>
+                    <th>ロボティクス工学科</th>
+                    <td>教室:23.102</td>
+                </tr>
+                <tr>
+                    <th>電気電子工学科</th>
+                    <td>教室:7.202</td>
+                </tr>
+                <tr>
+                    <th>情報工学科</th>
+                    <td>教室:7.203</td>
+                </tr>
+                <tr>
+                    <th>環境土木工学科</th>
+                    <td>教室:7.115</td>
+                </tr>
+            </table>
+            <h3>情報フロンティア学部</h3>
+            <table>
+                <tr>
+                    <th>メディア情報工学科</th>
+                    <td>教室:7.204</td>
+                </tr>
+                <tr>
+                    <th>経営情報工学科</th>
+                    <td>教室:7.303</td>
+                </tr>
+                <tr>
+                    <th>心理科学科</th>
+                    <td>教室:7.305</td>
+                </tr>
+            </table>
+            <h3>建築学部</h3>
+            <table>
+                <tr>
+                    <th>建築学科</th>
+                    <td>教室:23.211</td>
+                </tr>
+            </table>              
+        </div>
+     </section>
+     <section id="kit_map">
+       <div class = "kitmap">
+           <h2 class = "map">教室場所</h2>
+           <select id="area">
+               <option value="0">---選択して下さい---</option>
+               <option value="1">1号館</option>
+               <option value="2">3号館</option>
+               <option value="3">5号館</option>
+               <option value="4">6号館</option>
+               <option value="5">7号館</option>
+               <option value="6">8号館</option>
+               <option value="7">10号館</option>
+               <option value="8">12号館</option>
+               <option value="9">17号館</option>
+               <option value="10">20号館</option>
+               <option value="11">21号館</option>
+               <option value="12">22号館</option>
+           </select>
+       </div>
+       <img src="map.jpg" alt="学内map" />
+   </section>    
+</div>
+<!--footer 始まり    -->
+<footer>
+    <small>KIT Open Campass KIES Project</small>
+</footer>
+<!--footer 終わり    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJTZSib9aEnkqAhkJUqA1wX2Fyo47E9Mg&callback=initMap" type="text/javascript"></script>
+</body>
+</html>
