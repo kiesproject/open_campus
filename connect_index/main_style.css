@@ -159,8 +159,10 @@ section setting
     display: inline-block;
 }
 .section_info caption {
+    font-weight: bold;
     text-align: center;
-    display: inline-block;
+    margin: 10px;
+    
 }
 
 /*table setting*/
