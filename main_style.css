@@ -216,6 +216,12 @@ class_room section setting
 /*--------
 kit_map section setting
 --------*/
+#map{
+    width: 500px;
+    height: 400px;
+        
+}
+
 #area_select,
 #map_image {
     display: block;

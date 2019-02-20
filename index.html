@@ -111,34 +111,32 @@
                 </tr>
             </table>              
         </div>
-     </section>
-     <section id="kit_map">
-       <div class = "kitmap">
-           <h2 class = "map">教室場所</h2>
-           <select id="area">
-               <option value="0">---選択して下さい---</option>
-               <option value="1">1号館</option>
-               <option value="2">3号館</option>
-               <option value="3">5号館</option>
-               <option value="4">6号館</option>
-               <option value="5">7号館</option>
-               <option value="6">8号館</option>
-               <option value="7">10号館</option>
-               <option value="8">12号館</option>
-               <option value="9">17号館</option>
-               <option value="10">20号館</option>
-               <option value="11">21号館</option>
-               <option value="12">22号館</option>
-           </select>
-       </div>
-       <img src="map.jpg" alt="学内map" />
-   </section>    
+    </section>
+    <section id="kit_map"> 
+        <h2 class = "class_map">教室場所</h2>
+        <form name="myselect">
+            <select id="sel" onChange="selectchanged()">
+                <option value="0" selected>号館選択</option>
+                <option value="1">2号館</option>
+                <option value="2">3号館</option>
+                <option value="3">7号館</option>
+                <option value="4">8号館</option>
+                <option value="5">21号館</option>
+                <option value="6">23号館</option>
+                <option value="7">24号館</option>
+                <option value="8">challenge Lab</option>
+                <option value="9">41号館 夢工房</option>
+            </select>
+        </form>
+        <div id="map"></div>
+        <img src="gakunai_map.png" width="500" height="400" title="学内マップ">
+    </section> 
 </div>
 <!--footer 始まり    -->
 <footer>
     <small>KIT Open Campass KIES Project</small>
 </footer>
 <!--footer 終わり    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJTZSib9aEnkqAhkJUqA1wX2Fyo47E9Mg&callback=initMap" type="text/javascript"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyAd5K6dGQpJvb3SrZO8C5gsRVnWzb6U4pg&callback=initMap"></script>
 </body>
 </html>
