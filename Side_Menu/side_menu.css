@@ -147,18 +147,18 @@
     background: #ccc;
 }
 
-a{
+#menu_list a{
     color:white;
     text-decoration: none;
 }
 
-li:hover{
+#menu_list li:hover{
     
     opacity: inherit;
     background: #f66;
 }
 
-li{
+#menu_list li{
     list-style: none;
 }
 

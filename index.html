@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>KIT オープンキャンパス</title>
     <link rel="stylesheet" type="text/css" href="main_style.css">
+    <link rel="stylesheet" href="side_menu.css" />
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script src="main_theme.js"></script>
     <script src="main_style.js"></script>
+    <script src="menu.js"></script>
 </head>
 
 <body>
@@ -21,16 +23,26 @@
                 <div class="underline" />
             </h3>
         </div>
-        <nav id="header_nav">
-            <ul>
+        <div id="overlay"></div>
+
+        <div id="side_menu_btn">
+            <div class="ellipsis_v">
+                <span class="point top"></span>
+                <span class="point mid"></span>
+                <span class="point bot"></span>
+            </div>
+        </div>
+
+        <nav style="display: none" id="side_menu">
+            <ul id="menu_list">
                 <li>
-                    <a>タイムテーブル</a>
+                    <a href="#times" id="menu_time">タイムテーブル</a>
                 </li>
                 <li>
-                    <a>教室の場所</a>
+                    <a href="#class_room" id="menu_room">学科別教室の場所</a>
                 </li>
                 <li>
-                    <a>学校マップ</a>
+                    <a href="#kit_map" id="menu_map">学校マップ</a>
                 </li>
             </ul>
         </nav>
