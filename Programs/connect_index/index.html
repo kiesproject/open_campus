@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>KIT オープンキャンパス</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main_style.css">
-    <link rel="stylesheet" href="side_menu.css" />
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-
     <script src="main_theme.js"></script>
     <script src="main_style.js"></script>
-    <script src="menu.js"></script>
+
 </head>
 
 <body>
-
     <!--header始まり    -->
     <header>
         <div id="title_area">
@@ -25,26 +24,16 @@
                 <div class="underline" />
             </h3>
         </div>
-        <div id="overlay"></div>
-
-        <div id="side_menu_btn">
-            <div class="ellipsis_v">
-                <span class="point top"></span>
-                <span class="point mid"></span>
-                <span class="point bot"></span>
-            </div>
-        </div>
-
-        <nav style="display: none" id="side_menu">
-            <ul id="menu_list">
+        <nav id="header_nav">
+            <ul>
                 <li>
-                    <a href="#times" id="menu_time">タイムスケジュール</a>
+                    <a>タイムテーブル</a>
                 </li>
                 <li>
-                    <a href="#class_room" id="menu_room">学科別教室の場所</a>
+                    <a>教室の場所</a>
                 </li>
                 <li>
-                    <a href="#kit_map" id="menu_map">学内マップ</a>
+                    <a>学校マップ</a>
                 </li>
             </ul>
         </nav>
@@ -587,7 +576,6 @@
             </div>
         </section>
 
-
         <section id="class_room">
             <!-- 教室場所セクション -->
             <div class="section_inner">
@@ -680,30 +668,36 @@
         </section>
 
         <section id="kit_map">
-            <h2 class="class_map">学内マップ</h2>
-            <form name="myselect">
-                <select id="sel" onChange="selectchanged()">
-                    <option value="0" selected>号館選択</option>
-                    <option value="1">2号館</option>
+            <!-- マップセクション -->
+            <div class="section_inner">
+                <h2 class="section_title">教室場所<br>
+                    <div class="underline" />
+                </h2>
+                <select id="area_select">
+                    <option value="0">---選択して下さい---</option>
+                    <option value="1">1号館</option>
                     <option value="2">3号館</option>
-                    <option value="3">7号館</option>
-                    <option value="4">8号館</option>
-                    <option value="5">21号館</option>
-                    <option value="6">23号館</option>
-                    <option value="7">24号館</option>
-                    <option value="8">challenge Lab</option>
-                    <option value="9">41号館 夢工房</option>
+                    <option value="3">5号館</option>
+                    <option value="4">6号館</option>
+                    <option value="5">7号館</option>
+                    <option value="6">8号館</option>
+                    <option value="7">10号館</option>
+                    <option value="8">12号館</option>
+                    <option value="9">17号館</option>
+                    <option value="10">20号館</option>
+                    <option value="11">21号館</option>
+                    <option value="12">22号館</option>
                 </select>
-            </form>
-            <div id="map"></div>
-            <img src="gakunai_map.png" width="500" height="400" title="学内マップ">
+                <img id="map_image" src="map.jpg" alt="学内map" />
+            </div>
         </section>
+
     </div>
     <!--footer 始まり    -->
     <footer>
         <small>KIT Open Campass KIES Project</small>
     </footer>
     <!--footer 終わり    -->
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAd5K6dGQpJvb3SrZO8C5gsRVnWzb6U4pg&callback=initMap"></script>
 </body>
+
 </html>
