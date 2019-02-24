@@ -249,3 +249,8 @@ footer{
     text-align: center;
     padding: 20px 0;
 }
+
+img.kit_logo_image{
+    width: :10px;
+    height: 30px;
+}
