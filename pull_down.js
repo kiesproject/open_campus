@@ -1,14 +1,5 @@
 $(function(){
     $('.timetable tr p').hide();     //ロード初期の詳細は非表示
-
-    //マウスカーソルが重なると背景色をグレーに
-    $('.timetable tr span')
-        .mouseover(function(){
-            $(this).css('background','grey');
-        })
-        .mouseout(function(){
-            $(this).css('background','white');
-        });
     
     //アイコン横の<p>要素のクリックで詳細を表示・非表示の切り替え
     $('.timetable tr span').click(function(){

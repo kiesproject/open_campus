@@ -23,7 +23,3 @@ td > p {
     float: right;
     margin: 3px;
 }
-
-.icon:hover{
-    filter: drop-shadow(5px 5px 5px)opacity(70%);
-}
