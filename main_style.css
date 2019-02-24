@@ -218,24 +218,21 @@ class_room section setting
 /*--------
 kit_map section setting
 --------*/
+#kit_map select,
+#map_image,
 #map{
-    width: 500px;
-    height: 400px;
-        
-}
-
-#area_select,
-#map_image {
-    display: block;
     width: 100%;
 }
-
-#area_select {
+#map{
+    height: 400px;
 }
 
-#map_image {
-}
 
+#kit_map select{
+    text-align: center;
+    height: 50px;
+    padding : 5px;
+}
 /*--------
 blossom setting
 --------*/
