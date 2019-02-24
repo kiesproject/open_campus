@@ -101,4 +101,4 @@ function initMap(){
 
 $('#area').change(function(){
         var buildings = $('option:selected').val();
-    })
+    });
