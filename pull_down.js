@@ -6,24 +6,29 @@ $(function () {
 });
 
 function pulldown_content() {
-    console.log(this)
-    console.log($(this))
-    console.log($(this).find('.icon'))
     if ($(this).find('.icon').attr('id') == 'selected') {
-        $(this).find('.icon').attr('id', '').animate({opacity: 1}, {
-            duration: 1000,
-            step: function (now) {
-                $(this).css({transform: 'rotate(' + now * 0 + 'deg)'})
-            }
-        });
+        $(this).find('.icon').attr('id', '').animate(
+            {
+                opacity: 1
+            },
+            {
+                duration: 1000,
+                step: function (now) {
+                    $(this).css({transform: 'rotate(' + now * 0 + 'deg)'})
+                }
+             });
         $(this).find('p').hide(600);
     } else {
-        $(this).find('.icon').attr('id', 'selected').animate({opacity: 1}, {
-            duration: 1000,
-            step: function (now) {
-                $(this).css({transform: 'rotate(' + now * 90 + 'deg)'})
-            }
-        });
+        $(this).find('.icon').attr('id', 'selected').animate(
+            {
+                opacity: 1
+            },
+            {
+                duration: 1000,
+                step: function (now) {
+                    $(this).css({transform: 'rotate(' + now * 0 + 'deg)'})
+                }
+             });
         $(this).find('p').show(600);
     }
 }
