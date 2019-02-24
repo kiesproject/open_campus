@@ -79,7 +79,7 @@ function initMap(){
         //selの値を取得
         var sl = document.getElementById("sel");
         //selの選択された番号を取得
-        var value = document.myselect.sel.selectedIndex;
+        var value = document.map_selection.sel.selectedIndex;
         //mapに書き込み
         var map = new google.maps.Map(document.getElementById("map"),{
             zoom:my_size,
