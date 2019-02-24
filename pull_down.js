@@ -15,20 +15,19 @@ function pulldown_content() {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({transform: 'rotate(0deg)'});
-                    console.log(now);
                 }
              });
         $(this).find('p').hide(600);
     } else {
         $(this).find('.icon').attr('id', 'selected').animate(
             {
-                opacity: 1
+                opacity: 1,
+
             },
             {
                 duration: 1000,
                 step: function (now) {
                     $(this).css({transform: 'rotate(90deg)'});
-                    console.log(now);
                 }
              });
         $(this).find('p').show(600);
