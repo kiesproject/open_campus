@@ -14,7 +14,8 @@ function pulldown_content() {
             {
                 duration: 1000,
                 step: function (now) {
-                    $(this).css({transform: 'rotate(' + now * 0 + 'deg)'})
+                    $(this).css({transform: 'rotate(0deg)'});
+                    console.log(now);
                 }
              });
         $(this).find('p').hide(600);
@@ -26,7 +27,8 @@ function pulldown_content() {
             {
                 duration: 1000,
                 step: function (now) {
-                    $(this).css({transform: 'rotate(' + now * 0 + 'deg)'})
+                    $(this).css({transform: 'rotate(90deg)'});
+                    console.log(now);
                 }
              });
         $(this).find('p').show(600);
