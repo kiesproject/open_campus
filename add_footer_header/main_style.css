@@ -246,11 +246,26 @@ blossom setting
 }
 
 footer{
+    background-color: #fff;
+    width: 100%;
+    color: #000;
     text-align: center;
-    padding: 20px 0;
 }
 
-img.kit_logo_image{
-    width: :10px;
+.relation_url{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    text-align:left;
+}
+
+.relation_url h2{
+       text-align:left;
+}
+
+img.kit_logo_image{ 
+    margin: 10px;
+    width: :100%;
     height: 30px;
 }
