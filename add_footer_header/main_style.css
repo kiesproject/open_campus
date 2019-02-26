@@ -3,11 +3,13 @@ theme color setting
 --------*/
 
 body {
-    background-color: #F4F4F4; /*background color*/
+    background-color: #F4F4F4;
+    /*background color*/
 }
 
 #header_nav {
-    background-color: #1D4874; /*theme color 2*/
+    background-color: #1D4874;
+    /*theme color 2*/
     /*
     background-color: #1aac2f; !*theme color 2*!
     */
@@ -15,29 +17,38 @@ body {
 
 
 .section_inner table > thead tr {
-    background-color: #1D4874;  /*theme color 2*/
+    background-color: #1D4874;
+    /*theme color 2*/
     /*
     background-color: #1aac2f; !*theme color 2*!
     */
 }
 
 h1 .underline {
-    border-bottom: 20px solid #ffc8c7; /*underline*//*acsent color*/
+    border-bottom: 20px solid #ffc8c7;
+    /*underline*/
+    /*acsent color*/
     margin-top: -20px;
 }
 
 h2 .underline {
-    border-bottom: 15px solid #ffc8c7; /*underline*//*acsent color*/
+    border-bottom: 15px solid #ffc8c7;
+    /*underline*/
+    /*acsent color*/
     margin-top: -15px;
 }
 
 h3 .underline {
-    border-bottom: 10px solid #ffc8c7; /*underline*//*acsent color*/
+    border-bottom: 10px solid #ffc8c7;
+    /*underline*/
+    /*acsent color*/
     margin-top: -10px;
 }
 
 h4 .underline {
-    border-bottom: 5px solid #ffc8c7; /*underline*//*acsent color*/
+    border-bottom: 5px solid #ffc8c7;
+    /*underline*/
+    /*acsent color*/
     margin-top: -5px;
 }
 
@@ -49,7 +60,8 @@ h4 .underline {
 /*--------
 general setting
 --------*/
-html, body {
+html,
+body {
     position: absolute;
     width: 100%;
     top: 0;
@@ -58,8 +70,7 @@ html, body {
     overflow-x: hidden;
 }
 
-html {
-}
+html {}
 
 body {
     overflow-y: hidden;
@@ -86,12 +97,11 @@ header {
 
 .underline {
     height: 0;
-    margin : 0 -15px;
+    margin: 0 -15px;
     width: inherit;
 }
 
-#title_area h3 {
-}
+#title_area h3 {}
 
 #header_nav {
     font-weight: bold;
@@ -115,7 +125,8 @@ header {
 #header_nav ul li a {
     display: block;
     padding: 20px;
-    border-bottom: 2px solid white; /*underline*/
+    border-bottom: 2px solid white;
+    /*underline*/
     /*border: 1px solid white;*/
 }
 
@@ -157,11 +168,12 @@ section setting
     text-align: center;
     display: inline-block;
 }
+
 .section_info caption {
     font-weight: bold;
     text-align: center;
     margin: 10px;
-    
+
 }
 
 /*table setting*/
@@ -195,9 +207,7 @@ section setting
     background-color: #f6f6f6;
 }
 
-.section_inner table thead tr {
-
-}
+.section_inner table thead tr {}
 
 .section_inner table th,
 .section_inner table td {
@@ -217,10 +227,10 @@ class_room section setting
 /*--------
 kit_map section setting
 --------*/
-#map{
+#map {
     width: 500px;
     height: 400px;
-        
+
 }
 
 #area_select,
@@ -229,11 +239,9 @@ kit_map section setting
     width: 100%;
 }
 
-#area_select {
-}
+#area_select {}
 
-#map_image {
-}
+#map_image {}
 
 /*--------
 blossom setting
@@ -245,28 +253,28 @@ blossom setting
     height: 50px;
 }
 
-footer{
+footer {
     background-color: #1D4874;
     width: 100%;
     color: #fff;
     text-align: center;
 }
 
-footer h2{
+footer h2 {
     padding: 5px 10px;
 }
 
 
-.relation_url{
+.relation_url {
     font-weight: bold;
-    text-align:left;
+    text-align: left;
 }
 
 
-.relation_url a:visited{
-    color:#F1F104;
+.relation_url a:visited {
+    color: #F1F104;
 }
 
-.relation_url h2{
-       text-align:left;
+.relation_url h2 {
+    text-align: left;
 }
