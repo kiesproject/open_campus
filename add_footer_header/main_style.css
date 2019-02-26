@@ -246,7 +246,7 @@ blossom setting
 }
 
 footer{
-    background-color: #000;
+    background-color: #1D4874;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -264,7 +264,7 @@ footer h2{
 
 
 .relation_url a:visited{
-    color:silver;
+    color:#F1F104;
 }
 
 .relation_url h2{
