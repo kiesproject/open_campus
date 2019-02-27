@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>KIT オープンキャンパス</title>
-        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-        <script src="main_thema.js"></script>
-    </head>
-    <body>
-        <!--header始まり    -->
-        <header>
-            <div id="title_area">
-                <h1>KIESオープンキャンパス情報サイト</h1>
-                <h3>KIESプロジェクトによるオープンキャンパス情報サイト</h3>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a>タイムテーブル</a>
-                    </li>
-                    <li>
-                        <a>教室の場所</a>
-                    </li>
-                    <li>
-                        <a>学校マップ</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
-        <!--header 終わり  -->
-        <div id="container">
-            <section id="times">
-                <div class="timeschedule_text">
-                    <h2 class="time_schedule">タイムスケジュール</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>KIT オープンキャンパス</title>
+    <link rel="stylesheet" type="text/css" href="main_style.css">
+    <link rel="stylesheet" href="side_menu.css" />
+    <link rel="stylesheet" href="icon_styles.css">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+    <script src="main_theme.js"></script>
+    <script src="main_style.js"></script>
+    <script src="menu.js"></script>
+    <script src="pull_down.js"></script>
+</head>
+
+<body>
+
+    <!--header始まり    -->
+    <header>
+        <div id="title_area">
+            <h1>KIT 金沢工業大学 OPEN CAMPUS<br>
+                <div class="underline" />
+            </h1>
+            <br>
+            <h3>みつけよう、つながるミライ
+                <div class="underline" />
+            </h3>
+        </div>
+        <div id="overlay"></div>
+
+        <div id="side_menu_btn">
+            <div class="ellipsis_v">
+                <span class="point top"></span>
+                <span class="point mid"></span>
+                <span class="point bot"></span>
+            </div>
+        </div>
+
+        <nav style="display: none" id="side_menu">
+            <ul id="menu_list">
+                <li>
+                    <a href="#times" id="menu_time">タイムスケジュール</a>
+                </li>
+                <li>
+                    <a href="#class_room" id="menu_room">学科別教室の場所</a>
+                </li>
+                <li>
+                    <a href="#kit_map" id="menu_map">学内マップ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--header 終わり  -->
+    <div id="container">
+        <section id="times">
+            <!--  タイムスケジュールセクション    -->
+            <div class="section_inner">
+                <h2 class="section_title">タイムスケジュール<br>
                     <!--  タイムスケジュールセクション    -->
+                    <div class="underline" />
+                </h2>
+                <ul class="section_info">
                     <div>
                         <h3>工学部</h3>
                         <table border="1">
@@ -46,10 +75,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>学科紹介 ～機械工学の魅力～</span>
                                         <p>
                                             知っているようで謎だらけな機械工学。
@@ -60,6 +90,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>暮らしの中の機械工学</span>
                                         <p>
                                             毎日使っている身近なモノの仕組みを機械工学から学び、
@@ -80,10 +111,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：20</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>航空を学ぶなら金沢工業大学へ！</span>
                                         <p>
                                             魅力的な教育方針やカリキュラム、
@@ -94,6 +126,7 @@
                                 <tr>
                                     <td>13：00 ～ 13：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             実験授業で航空機について学ぼう！
                                         </span>
@@ -105,6 +138,7 @@
                                 <tr>
                                     <td>11：20 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>大型旅客機のシミュレータを用いた操縦体験</span>
                                         <p>
                                             ＫＩＴでは航空機の設計授業の成果を学生自らがシミュレータを用いて評価します。
@@ -115,6 +149,7 @@
                                 <tr>
                                     <td>11：20 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>実物の航空機で体験講義</span>
                                         <p>
                                             初等練習機T3や観測ヘリコプターOH6のコックピットで、
@@ -135,10 +170,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             ぶっちゃけます！
                                             ロボティクス学科での生活
@@ -153,6 +189,7 @@
                                 <tr>
                                     <td>13：00 ～ 13：45</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>いま農業に役立つロボットが熱い！</span>
                                         <p>
                                             近年、農作業支援にロボットが活躍しています。
@@ -163,6 +200,7 @@
                                 <tr>
                                     <td>13：50 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>４足歩行ロボットを華麗に動かしてみよう！</span>
                                         <p>
                                             ４足歩行ロボットを用いた体験型ワークショップ。
@@ -183,10 +221,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 10：55</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>電気電子工学科 学科紹介</span>
                                         <p>
                                             学科の特長、勉強内容、研究設備、進路(大学院進学、就職)、
@@ -197,6 +236,7 @@
                                 <tr>
                                     <td>10：55 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>先輩たちによる研究内容の紹介</span>
                                         <p>
                                             電気電子工学科の研究室をパネルで説明します。
@@ -208,6 +248,7 @@
                                 <tr>
                                     <td>10：55 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>電気電子工学科の充実した実験設備の紹介</span>
                                         <p>
                                             全国の大学の中で有数の充実した実験設備を見てみよう。
@@ -218,6 +259,7 @@
                                 <tr>
                                     <td>13：00 ～ 13：20</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>電気電子工学科 学科紹介</span>
                                         <p>
                                             学科の特長、勉強内容、研究設備、進路(大学院進学、就職)、
@@ -228,6 +270,7 @@
                                 <tr>
                                     <td>13：20 ～ 13：40</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>なんでも質問セッション</span>
                                         <p>
                                             実際の大学生活や日常の生活、指定寮の様子、研究・勉強時間など、
@@ -238,6 +281,7 @@
                                 <tr>
                                     <td>13：40 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>授業の実験を体験と研究室訪問</span>
                                         <p>
                                             電気電子工学科の授業（実験）を体験！
@@ -258,10 +302,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>KIT情報工学科トピック20連発＋3連発</span>
                                         <p>
                                             情報工学科の最近の話題20個をダイジェストで、さらに3つをじっくり紹介します！
@@ -272,6 +317,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>RaspberryPiを用いたIoTプログラミング</span>
                                         <p>
                                             IoTの時代にはハードウェアとソフトェアの両方の知識が重要！
@@ -292,10 +338,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             環境土木工学科
                                             学科紹介と授業・実習体験
@@ -309,6 +356,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             やつかほリサーチキャンパスにある地域防災環境科学研究所
                                             見学ツアー
@@ -322,7 +370,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <h3>情報フロンティア学部</h3>
                         <table border="1">
@@ -335,10 +382,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>学科紹介＆『自分で作れるヴァーチャル・リアリティ！』</span>
                                         <p>
                                             仮想現実の原理とそれを実現している技術を、
@@ -349,6 +397,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：10</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             視覚デザインに挑戦！
                                             立体視3Dイメージ制作
@@ -363,6 +412,7 @@
                                 <tr>
                                     <td>14：10 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>メディアコンテンツ系プロジェクト活動紹介！</span>
                                         <p>
                                             メディア技術を活用した実践的な地域活性化プロジェクトについて、
@@ -383,10 +433,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>ＡＮＡと最新のロボットビジネスを創ろう</span>
                                         <p>
                                             ＫＩＴと提携したＡＮＡの世界最先端のロボットを活用したビジネスを
@@ -397,6 +448,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             カードゲームでイノベーション力を高めよう！
                                             ～社会課題を楽しみながら解決する～
@@ -420,10 +472,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>心理科学科のホントのトコロ</span>
                                         <p>
                                             「心理科学科では何を学ぶの？」
@@ -434,6 +487,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             ホントの心理学体験：実験・データ処理・プレゼン！
                                         </span>
@@ -446,7 +500,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <h3>建築学部</h3>
                         <table border="1">
@@ -459,10 +512,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>金沢で学ぶ、建築を学ぶ。</span>
                                         <p>
                                             歴史的街並みが残る金沢で建築を学ぶ意義と、本学建築学科の特徴を説明します。
@@ -473,6 +527,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>建築の日々、建築の未来。</span>
                                         <p>
                                             日本建築学会賞も受賞した扇が丘キャンパスのツアーです。
@@ -483,7 +538,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <h3>バイオ・科学部</h3>
 
@@ -497,10 +551,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>無機蛍光体を作ってみよう！</span>
                                         <p>
                                             きれいな蛍光を発する無機化合物を合成します。
@@ -511,6 +566,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>有機色素の合成に挑戦しよう！</span>
                                         <p>
                                             有機化学実験の設備・器具を用い、4種類の美しい色素を合成します。
@@ -531,10 +587,11 @@
                                     <th>イベント</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="timetable">
                                 <tr>
                                     <td>10：35 ～ 11：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             日曜大工？
                                             ＤＩＹバイオを体験してみよう！
@@ -548,6 +605,7 @@
                                 <tr>
                                     <td>13：00 ～ 14：50</td>
                                     <td>
+                                        <img class="icon" src="./image/icon.png" width="25px" height="25px">
                                         <span>
                                             イースト菌を使って医薬品原料を作ってみよう！
                                         </span>
@@ -560,97 +618,138 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </section>
+                </ul>
+            </div>
+        </section>
 
-            <section id="class_room">
-                <!-- 教室場所セクション -->
-                <div class="class_room-text">
-                    <h2 class="class_room">学科別教室場所</h2>
-                    <h3>工学部</h3>
-                    <table>
-                        <tr>
-                            <th>学科名</th>
-                            <td>教室場所</td>
-                        </tr>
-                        <tr>
-                            <th>機械工学科</th>
-                            <td>教室:24.112</td>
-                        </tr>
-                        <tr>
-                            <th>航空システム工学科</th>
-                            <td>教室:23.112</td>
-                        </tr>
-                        <tr>
-                            <th>ロボティクス工学科</th>
-                            <td>教室:23.102</td>
-                        </tr>
-                        <tr>
-                            <th>電気電子工学科</th>
-                            <td>教室:7.202</td>
-                        </tr>
-                        <tr>
-                            <th>情報工学科</th>
-                            <td>教室:7.203</td>
-                        </tr>
-                        <tr>
-                            <th>環境土木工学科</th>
-                            <td>教室:7.115</td>
-                        </tr>
-                    </table>
 
-                    <h3>情報フロンティア学部</h3>
-                    <table>
-                        <tr>
-                            <th>メディア情報工学科</th>
-                            <td>教室:7.204</td>
-                        </tr>
-                        <tr>
-                            <th>経営情報工学科</th>
-                            <td>教室:7.303</td>
-                        </tr>
-                        <tr>
-                            <th>心理科学科</th>
-                            <td>教室:7.305</td>
-                        </tr>
-                    </table>
+        <section id="class_room">
+            <!-- 教室場所セクション -->
+            <div class="section_inner">
+                <h2 class="section_title">学科別教室場所<br>
+                    <div class="underline" />
+                </h2>
+                <ul class="section_info">
+                    <li>
 
-                    <h3>建築学部</h3>
-                    <table>
-                        <tr>
-                            <th>建築学科</th>
-                            <td>教室:23.211</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
+                        <h3>工学部</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>学科名</th>
+                                    <td>教室場所</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>機械工学科</th>
+                                    <td>教室:24.112</td>
+                                </tr>
+                                <tr>
+                                    <th>航空システム工学科</th>
+                                    <td>教室:23.112</td>
+                                </tr>
+                                <tr>
+                                    <th>ロボティクス工学科</th>
+                                    <td>教室:23.102</td>
+                                </tr>
+                                <tr>
+                                    <th>電気電子工学科</th>
+                                    <td>教室:7.202</td>
+                                </tr>
+                                <tr>
+                                    <th>情報工学科</th>
+                                    <td>教室:7.203</td>
+                                </tr>
+                                <tr>
+                                    <th>環境土木工学科</th>
+                                    <td>教室:7.115</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>情報フロンティア学部</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>学科名</th>
+                                    <td>教室場所</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>メディア情報工学科</th>
+                                    <td>教室:7.204</td>
+                                </tr>
+                                <tr>
+                                    <th>経営情報工学科</th>
+                                    <td>教室:7.303</td>
+                                </tr>
+                                <tr>
+                                    <th>心理科学科</th>
+                                    <td>教室:7.305</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>建築学部</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>学科名</th>
+                                    <td>教室場所</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>建築学科</th>
+                                    <td>教室:23.211</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-            <section id="kit_map">
-                <div class="kitmap">
-                    <h2 class="map">教室場所</h2>
-                    <select id="area">
-                        <option value="0">---選択して下さい---</option>
-                        <option value="1">1号館</option>
-                        <option value="2">3号館</option>
-                        <option value="3">5号館</option>
-                        <option value="4">6号館</option>
-                        <option value="5">7号館</option>
-                        <option value="6">8号館</option>
-                        <option value="7">10号館</option>
-                        <option value="8">12号館</option>
-                        <option value="9">17号館</option>
-                        <option value="10">20号館</option>
-                        <option value="11">21号館</option>
-                        <option value="12">22号館</option>
-                    </select>
-                </div>
-                <img src="map.jpg" alt="学内map" />
-            </section>
+        <section id="kit_map">
+            <h2 class="class_map">学内マップ</h2>
+            <form name="myselect">
+                <select id="sel" onChange="selectchanged()">
+                    <option value="0" selected>号館選択</option>
+                    <option value="1">2号館</option>
+                    <option value="2">3号館</option>
+                    <option value="3">7号館</option>
+                    <option value="4">8号館</option>
+                    <option value="5">21号館</option>
+                    <option value="6">23号館</option>
+                    <option value="7">24号館</option>
+                    <option value="8">challenge Lab</option>
+                    <option value="9">41号館 夢工房</option>
+                </select>
+            </form>
+            <div id="map"></div>
+            <h2 class="all_map">扇が丘キャンパス全体マップ</h2>
+            <img src="./image/gakunai_map.png" width="500" height="400" title="学内マップ">
+        </section>
+    </div>
+    <!--footer 始まり    -->
+    <footer>
+        <div class="relation_url">
+            <h2>関連リンク</h2>
+            <ul>
+                <li><a href="https://www.kanazawa-it.ac.jp/">KIT 金沢工業大学HP</a></li>
+                <li><a href="https://kitnet.jp/opencampus/">KIT オープンキャンパスのご案内</a></li>
+                <li><a href="https://www.kanazawa-it.ac.jp/prj/#renkei">KIT 産学連携 教育研究プロジェクト</a></li>
+                <li><a href="https://www.kanazawa-it.ac.jp/prj/prj-projects/KIES/index.html">KIESプロジェクト詳細</a></li>
+            </ul>
         </div>
-        <!--footer 始まり    -->
-        <footer>
-            <small>KIT Open Campass KIES Project</small>
-        </footer>
-        <!--footer 終わり    -->
-    </body>
+        <small>(C)2019 KIES-Project. ALL RIGHTS RESERVED.</small>
+    </footer>
+    <!--footer 終わり    -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAd5K6dGQpJvb3SrZO8C5gsRVnWzb6U4pg&callback=initMap"></script>
+</body>
+
 </html>
