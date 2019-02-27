@@ -1,14 +1,12 @@
 $(function(){
-    pulldouwn_tr = '#times .section_info table tbody tr'
-    pulldouwn_img = '#class_room .section_info table tbody tr'
+    pulldown_tr = '.section_info table tbody tr'
+    console.log(pulldown_tr + ' .pulldown_content')
+    $(pulldown_tr + ' .pulldown_content').hide();     //ロード初期の詳細は非表示
 
-    $(pulldouwn_tr + ' p').hide();     //ロード初期の詳細は非表示
-    //$(pulldouwn_img + ' img').hide();     //ロード初期の詳細は非表示
-
-    $(pulldouwn_tr).click(pulldouwn_content);
+    $(pulldown_tr).click(pulldown_content);
 });
 
-function pulldouwn_content(){
+function pulldown_content(){
     if($(this).find('.icon').attr('id') == 'selected'){
         $(this).find('.icon').attr('id','').animate(
             {
@@ -21,8 +19,7 @@ function pulldouwn_content(){
                 }
             }
         );
-        $(this).find('p').hide(600);
-        // $(this).find('img').hide(600);
+        $(this).find('.pulldown_content').hide(600);
     }else{
         $(this).find('.icon').attr('id','selected').animate(
             {
@@ -35,7 +32,6 @@ function pulldouwn_content(){
                 }
             }
         );
-        $(this).find('p').show(600);
-        // $(this).find('img').hide(600);
+        $(this).find('.pulldown_content').show(600);
     }
 }
