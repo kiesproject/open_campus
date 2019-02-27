@@ -263,6 +263,40 @@ kit_map section setting
     height: 50px;
     padding : 5px;
 }
+
+/*--------
+footer setting
+--------*/
+footer {
+    background-color: #1D4874;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+footer h2 {
+    padding: 5px 10px;
+}
+
+
+.relation_url {
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.relation_url a:visited {
+    color: #F1F104;
+}
+
+.relation_url a:link {
+    color: #fff;
+}
+
+.relation_url h2 {
+    text-align: left;
+}
+
 /*--------
 blossom setting
 --------*/
