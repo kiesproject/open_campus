@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>KIT オープンキャンパス</title>
-    <link rel="stylesheet" type="text/css" href="main_style.css">
-    <link rel="stylesheet" href="side_menu.css" />
-    <link rel="stylesheet" href="icon_styles.css">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    
-    <script src="main_theme.js"></script>
-    <script src="main_style.js"></script>
-    <script src="menu.js"></script>
-    <script src="pull_down.js"></script>
+    <link type="text/css" rel="stylesheet" href="normalize.css">
+    <link type="text/css" rel="stylesheet" href="main_style.css">
+    <link type="text/css" rel="stylesheet" href="side_menu.css">
+    <link type="text/css" rel="stylesheet" href="icon_style.css">
+
+    <script type="text/javascript" src="main_style.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="pull_down.js"></script>
+    <script type="text/javascript" src="map.js"></script>
 </head>
 
 <body>
 
-    <!--header始まり    -->
-    <header>
-        <div id="title_area">
-            <h1>KIESオープンキャンパス情報サイト<br>
-                <div class="underline" />
-            </h1>
-            <br>
-            <h3>KIESプロジェクトによるオープンキャンパス情報サイト<br>
-                <div class="underline" />
-            </h3>
-        </div>
-        <div id="overlay"></div>
+<!--header始まり    -->
+<header>
+    <div id="title_area">
+        <h1>KIESオープンキャンパス情報サイト
+            <div class="underline"/>
+        </h1>
+        <br>
+        <h3>KIESプロジェクトによるオープンキャンパス情報サイト
+            <div class="underline"/>
+        </h3>
+    </div>
+    <div id="overlay"></div>
 
-        <div id="side_menu_btn">
-            <div class="ellipsis_v">
-                <span class="point top"></span>
-                <span class="point mid"></span>
-                <span class="point bot"></span>
-            </div>
+    <div id="side_menu_btn">
+        <div class="ellipsis_v">
+            <span class="point top"></span>
+            <span class="point mid"></span>
+            <span class="point bot"></span>
         </div>
+    </div>
 
         <nav style="display: none" id="side_menu">
             <ul id="menu_list">
@@ -621,15 +622,59 @@
             </div>
         </section>
 
+                    <table border="1">
+                        <caption>
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/bio_kagaku/bio/index.html">応用バイオ学科</a>
+                        </caption>
+                        <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：50</td>
+                            <td>
+                                <span>
+                                    日曜大工？
+                                    ＤＩＹバイオを体験してみよう！
+                                </span>
+                                <img class="icon" src="./image/icon.png">
+                                <p>
+                                    小さくて安価な“箱”が最先端のバイオテクノロジー研究を可能にする！？
+                                    ＤＩＹバイオに触れて未来に待ち受ける問題を考えよう！
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：50</td>
+                            <td>
+                                <span>
+                                    イースト菌を使って医薬品原料を作ってみよう！
+                                </span>
+                                <img class="icon" src="./image/icon.png">
+                                <p>
+                                    イースト菌を用いた還元反応を利用して、
+                                    抗生物質の原料として有用なマンデル酸を合成します。
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </ul>
+        </div>
+    </section>
 
-        <section id="class_room">
-            <!-- 教室場所セクション -->
-            <div class="section_inner">
-                <h2 class="section_title">学科別教室場所<br>
-                    <div class="underline" />
-                </h2>
-                <ul class="section_info">
-                    <li>
+    <section id="class_room">
+        <!-- 教室場所セクション -->
+        <div class="section_inner">
+            <h2 class="section_title">学科別教室場所
+                <div class="underline"/>
+            </h2>
+            <ul class="section_info">
+                <li>
 
                         <h3>工学部</h3>
                         <table>
@@ -782,9 +827,12 @@
             </div>
         </section>
 
-        <section id="kit_map">
-            <h2 class="class_map">学内マップ</h2>
-            <form name="myselect">
+    <section id="kit_map">
+        <div class="section_inner">
+            <h2>学内マップ
+                <div class="underline"/>
+            </h2>
+            <form name="map_selection">
                 <select id="sel" onChange="selectchanged()">
                     <option value="0" selected>号館選択</option>
                     <option value="1">2号館</option>
@@ -799,15 +847,21 @@
                 </select>
             </form>
             <div id="map"></div>
-            <h2 class="all_map">扇が丘キャンパス全体マップ</h2>
-            <img src="./image/gakunai_map.png" width="500" height="400" title="学内マップ">
-        </section>
-    </div>
-    <!--footer 始まり    -->
-    <footer>
-        <small>KIT Open Campass KIES Project</small>
-    </footer>
-    <!--footer 終わり    -->
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAd5K6dGQpJvb3SrZO8C5gsRVnWzb6U4pg&callback=initMap"></script>
+
+            <h2>扇が丘キャンパス全体マップ
+                <div class="underline"/>
+            </h2>
+            <img id="map_image" src="./image/gakunai_map.png" title="学内マップ"/>
+        </div>
+    </section>
+</div>
+<!--footer 始まり    -->
+<footer>
+    <small>KIT Open Campass KIES Project</small>
+</footer>
+<!--footer 終わり    -->
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyAd5K6dGQpJvb3SrZO8C5gsRVnWzb6U4pg&callback=initMap"></script>
 </body>
 </html>
+
+
