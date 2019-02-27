@@ -254,7 +254,7 @@ kit_map section setting
     width: 100%;
 }
 #map{
-    height: 400px;
+    height: 600px;
 }
 
 
@@ -296,7 +296,6 @@ footer h2 {
 .relation_url h2 {
     text-align: left;
 }
-
 /*--------
 blossom setting
 --------*/

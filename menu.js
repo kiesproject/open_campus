@@ -1,5 +1,5 @@
 $(function(){
-    var menu_list = $(".menu_list > li");
+    var menu_list = $("#menu_list > li");
     var body = $('body');
     $("#side_menu_btn").on('click', function(){
         body.toggleClass('side_open');
@@ -14,7 +14,7 @@ $(function(){
     menu_list.click(function(){
         var scroll_point = $(this).innerHeight();
     });
-    $("#menu_time, #menu_room, #menu_map").on('click', function(){
+    $(".js_menu").on('click', function(){
         body.removeClass('side_open');
         $("#side_menu").hide();
     });

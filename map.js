@@ -1,4 +1,4 @@
-var my_size = 16;//拡大サイズ
+var my_size = 17;//拡大サイズ
 var my_latlng; //現在位置用の変数
 var marker;
 
