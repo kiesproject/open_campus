@@ -275,6 +275,10 @@ footer h2 {
     color: #F1F104;
 }
 
+.relation_url a:link {
+    color: #fff;
+}
+
 .relation_url h2 {
     text-align: left;
 }
