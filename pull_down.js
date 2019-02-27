@@ -3,10 +3,10 @@ $(function(){
     console.log(pulldown_tr + ' .pulldown_content')
     $(pulldown_tr + ' .pulldown_content').hide();     //ロード初期の詳細は非表示
 
-    $(pulldown_tr).click(pulldown_content);
+    $(pulldown_tr).click(show_content);
 });
 
-function pulldown_content(){
+function show_content(){
     if($(this).find('.icon').attr('id') == 'selected'){
         $(this).find('.icon').attr('id','').animate(
             {
