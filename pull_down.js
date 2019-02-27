@@ -1,8 +1,6 @@
 $(function(){
-    pulldown_tr = '.section_info table tbody tr'
-    console.log(pulldown_tr + ' .pulldown_content')
-    $(pulldown_tr + ' .pulldown_content').hide();     //ロード初期の詳細は非表示
-
+    pulldown_tr = '.section_info table tbody tr';
+    $(pulldown_tr + ' .pulldown_content').hide();
     $(pulldown_tr).click(show_content);
 });
 
