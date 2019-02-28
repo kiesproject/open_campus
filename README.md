@@ -9,4 +9,4 @@ Overview　オープンキャンパスに来た高校生が初めてのキャン
 
 
 ## Execution method
- プログラムをダウンロード後、index.htmlを[プログラムから開く]　→[google chrome]で実行できる。なお、サーバにおいたwebページを以下に表す。[]
+ プログラムをダウンロード後、index.htmlを[プログラムから開く]　→[google chrome]で実行できる。なお、サーバにおいたwebページを以下に表す。<http://clanax.html.xdomain.jp/kies_open_campas/>
