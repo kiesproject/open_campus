@@ -97,8 +97,3 @@ function initMap(){
             icon:"http://maps.google.com/mapfiles/ms/micons/man.png"
         });
     }
-
-
-$('#area').change(function(){
-        var buildings = $('option:selected').val();
-    });
