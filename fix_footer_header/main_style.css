@@ -1,0 +1,324 @@
+/*--------
+theme color setting
+--------*/
+
+body {
+    background-color: #F4F4F4; /*background color*/
+}
+
+#header_nav {
+    background-color: #1D4874; /*theme color 2*/
+    /*
+    background-color: #1aac2f; !*theme color 2*!
+    */
+}
+
+
+.section_inner table > thead tr {
+    background-color: #1D4874;  /*theme color 2*/
+    /*
+    background-color: #1aac2f; !*theme color 2*!
+    */
+}
+
+h1 .underline {
+    border-bottom: 20px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -20px;
+}
+
+h2 .underline {
+    border-bottom: 15px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -15px;
+}
+
+h3 .underline {
+    border-bottom: 15px solid rgba(105, 255, 36, 0.44); /*underline*//*acsent color*/
+    margin-top: -15px;
+}
+
+h4 .underline {
+    border-bottom: 5px solid #ffc8c7; /*underline*//*acsent color*/
+    margin-top: -5px;
+}
+
+#header_nav,
+.section_inner table > thead tr {
+    color: #FFFFFF;
+}
+
+/*--------
+general setting
+--------*/
+html, body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+}
+
+body {
+    overflow-y: hidden;
+}
+
+/*--------
+header setting
+--------*/
+header {
+    width: 100%;
+}
+
+#title_area,
+#header_nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#title_area h1,
+#title_area h3 {
+    display: inline-block;
+}
+
+.underline {
+    height: 0;
+    margin : 0 -15px;
+    width: inherit;
+}
+
+#title_area {
+
+}
+
+#header_nav {
+    font-weight: bold;
+    padding: 5px;
+}
+
+#header_nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 10px;
+}
+
+#header_nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#header_nav ul li a {
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid white; /*underline*/
+    /*border: 1px solid white;*/
+}
+
+/*--------
+section setting
+--------*/
+#oc_day{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    top 30%;
+    left: 80%;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container > section {
+    margin: 0;
+    margin-top: 20px;
+    padding: 15px 0;
+    background-color: white;
+}
+
+.section_inner {
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.section_title {
+    text-align: center;
+    display: inline-block;
+}
+
+.section_info {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section_inner h2 ,
+.section_inner h3 {
+    text-align: center;
+    display: inline-block;
+}
+.section_inner caption {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+/*table setting*/
+.section_inner table {
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    margin: -10px auto 10px auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.section_inner table thead,
+.section_inner table tbody {
+    width: 100%;
+}
+
+.section_inner table tr {
+    width: 100%;
+}
+
+.section_inner table > thead tr {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.section_inner table > tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.section_inner table > tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.section_inner table thead tr {
+
+}
+
+.section_inner table th,
+.section_inner table td {
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+.section_inner table span {
+    font-weight: bold;
+    line-height: 26px;
+}
+.section_inner table p {
+    line-height: 24px;
+}
+
+/*--------
+times section setting
+--------*/
+#table_memo {
+    position: relative;
+    display: block;
+    width : 0px;
+    height: 0px;
+    overflow: visible;
+    float : right;
+    top : 61px;
+    right : 0px;
+}
+#table_memo div {
+    position: relative;
+    display: block;
+    width : 200px;
+    padding : 12px;
+    border: 1px solid #6e6e6e;
+    border-radius: 20px;
+    float : right;
+    line-height: 26px;
+    background-color: #f6f6f6;
+}
+
+/*--------
+class_room section setting
+--------*/
+
+/*--------
+kit_map section setting
+--------*/
+#kit_map select,
+#map_image,
+#map{
+    width: 100%;
+}
+#map{
+    height: 600px;
+}
+
+
+#kit_map select{
+    text-align: center;
+    height: 50px;
+    padding : 5px;
+}
+
+/*--------
+footer setting
+--------*/
+footer {
+    background-color: #1D4874;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+footer h2 {
+    padding: 10px 10px;
+}
+
+.relation_url {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.relation_url li{
+    margin: 10px;
+    list-style: none;   
+}
+
+
+.relation_url a:visited {
+    color: #F1F104;
+}
+
+.relation_url a:link {
+    color: #fff;
+}
+
+
+#logo_kies{
+    height:55px;
+    width: 55px;
+}
+
+/*--------
+blossom setting
+--------*/
+.blossom {
+    z-index: -1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
