@@ -120,16 +120,17 @@ header {
     /*border: 1px solid white;*/
 }
 
-/*--------
-section setting
---------*/
 #oc_day{
     height: 15%;
     width: 15%;
     position: relative;
-    top 30%;
     left: 80%;
+    top: 20px;
 }
+
+/*--------
+section setting
+--------*/
 
 #container {
     width: 90%;
