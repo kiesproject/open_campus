@@ -1,33 +1,35 @@
 window.onload = function () {
     try {
-        setInterval(dropBlossom, 1000);
+        setInterval(dropBlossom, 777);
     }
     catch (e) {
         console.log(e);
     }
 }
 function dropBlossom() {
-    var browsWidth = window.innerWidth;
-    var browsHeight = window.innerHeight;
-    var blosFirstLeft = Math.random() * browsWidth - 100;
-    var blosFallDist = Math.random() * browsHeight + 400;
+    var fallenLeftDist = document.body.scrollWidth;
+    var fallenDownDist = fallenLeftDist * 3;
+    var fallenDuration = (fallenDownDist / 150) * 1000; //200[px]落下 毎に 1[s]
+
+    //-fallenDownDist[px] ～ document.body.scrollWidth[px]までのランダムな値
+    var firstTopOffset = Math.random()*(fallenDownDist + document.body.scrollHeight) - fallenDownDist;
+
     $('#blossom_area')
-        .prepend("<img class='blossom' " +
-            "src='image/blossom100.png' " +
-            "style='left:" + blosFirstLeft + "px;" +
-            "top:-100px;'/>");
+        .prepend(
+            "<img class=\'blossom\' " +
+            "src=\'image/blossom100.png\' " +
+            "style=\'left:-50px\; top:" + firstTopOffset + "px\;\'/>");
     $('.blossom:first')
         .animate(
             {
-                left: blosFirstLeft + blosFallDist / 3 + 'px',
-                top: blosFallDist + 'px',
-                opacity: '0'
+                left: fallenLeftDist + 'px',
+                top: (fallenDownDist + firstTopOffset) + 'px'
             },
             {
-                duration: 10000,
+                duration: fallenDuration,
+                easing: "linear",
                 step: function (now) {
-                    $(this)
-                        .css({transform: 'rotate(' + (now * 360) + 'deg)'});
+                    $(this).css({transform: 'rotate(' + (now) + 'deg)'});
                 },
                 complete: function () {
                     this.remove();

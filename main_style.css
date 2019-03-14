@@ -13,6 +13,9 @@ body {
     */
 }
 
+#container > section {
+    background-color: rgba(255,255,255,0.5);
+}
 
 .section_inner table > thead tr {
     background-color: #1D4874;  /*theme color 2*/
@@ -132,7 +135,6 @@ section setting
     margin: 0;
     margin-top: 20px;
     padding: 15px 0;
-    background-color: white;
 }
 
 .section_inner {
