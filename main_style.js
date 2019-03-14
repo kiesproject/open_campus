@@ -11,7 +11,7 @@ function dropBlossom() {
     var browsHeight = window.innerHeight;
     var blosFirstLeft = Math.random() * browsWidth - 100;
     var blosFallDist = Math.random() * browsHeight + 400;
-    $('body')
+    $('#blossom_area')
         .prepend("<img class='blossom' " +
             "src='image/blossom100.png' " +
             "style='left:" + blosFirstLeft + "px;" +
