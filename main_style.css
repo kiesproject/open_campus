@@ -13,12 +13,20 @@ body {
     */
 }
 
+.thead_engineering {
+    background-color: #84afba;
+}
 
-.section_inner table > thead tr {
-    background-color: #1D4874;  /*theme color 2*/
-    /*
-    background-color: #1aac2f; !*theme color 2*!
-    */
+.thead_infomatics {
+    background-color: #c16c70;
+}
+
+.thead_architecture {
+    background-color: #9fb386;
+}
+
+.thead_bio {
+    background-color: #6b7da8;
 }
 
 h1 .underline {
