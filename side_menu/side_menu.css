@@ -50,6 +50,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 70px;
+
     color: #fff;
     background: #2A408E;    
     z-index: 1;
@@ -159,7 +160,6 @@
 
 .menu_dt span{
     font-weight: bold;
-    cursor: pointer;
 }
 
 .menu_dt span::after{
@@ -173,12 +173,16 @@
     color: #ffd800;
 }
 
+.child li{
+    font-size: 23px; 
+}
+
 .menu_dt ul{
     display: none;
 }
 
 /* サイドメニューオープン */
 .side_open #overlay{
-    -webkit-transform: translate3d(300px, 0, 0);
+    -webkit-transform: translate3d(330px, 0, 0);
     transform: translate3d(330px, 0, 0);
 }
