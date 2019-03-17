@@ -21,6 +21,10 @@ body {
     */
 }
 
+#title_area h1,h3{
+    font-family:  "Rounded Mplus 1c";
+}
+
 h1 .underline {
     border-bottom: 20px solid #ffc8c7; /*underline*//*acsent color*/
     margin-top: -20px;
