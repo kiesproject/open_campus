@@ -4,6 +4,7 @@ $(function(){
 });
 
 function link_show(){
-    var obj = $(this).attr('href');
+    var obj_path = $(this).attr('href');
+    var obj = $(obj_path);
     show_content(obj);
 }

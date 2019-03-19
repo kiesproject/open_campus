@@ -6,12 +6,12 @@ $(function(){
 
 function pulldown(){
     var obj = $(this);
-    show_content(obj)
+    show_content(obj);
 }
 
 function show_content(content){
-    if($(content).find('.icon').attr('id') == 'selected'){
-        $(content).find('.icon').attr('id','').animate(
+    if(content.find('.icon').attr('id') == 'selected'){
+        content.find('.icon').attr('id','').animate(
             {
                 opacity: 1
             },
@@ -22,9 +22,9 @@ function show_content(content){
                 }
             }
         );
-        $(content).find('.pulldown_content').hide(600);
+        content.find('.pulldown_content').hide(600);
     }else{
-        $(content).find('.icon').attr('id','selected').animate(
+        content.find('.icon').attr('id','selected').animate(
             {
                 opacity: 1
             },
@@ -35,6 +35,6 @@ function show_content(content){
                 }
             }
         );
-        $(content).find('.pulldown_content').show(600);
+        content.find('.pulldown_content').show(600);
     }
 }
