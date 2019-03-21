@@ -296,6 +296,10 @@ footer h2{
     font-size: large;
     font-weight: bold;
 }
+.relation_url ul{
+    padding-left: 0px;
+}
+
 
 .relation_url li{
     margin-bottom: 5px;
