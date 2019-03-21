@@ -90,6 +90,7 @@ header {
 #title_area h1,
 #title_area h3 {
     display: inline-block;
+    font-family:  "Rounded Mplus 1c";
 }
 
 .underline {
@@ -127,6 +128,15 @@ header {
     border-bottom: 2px solid white; /*underline*/
     /*border: 1px solid white;*/
 }
+
+#oc_day{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    top: 10px;
+    right: 10%;
+}
+
 
 /*--------
 section setting
