@@ -6,16 +6,26 @@ $(function(){
         $("#side_menu").slideToggle();
         $("#overlay").on('click', function(){
             body.removeClass('side_open');
+            $('span').removeClass('menu_child');
             $("#side_menu").hide();
+            $('.child').hide();
         });
 
     });
-    //menu_listがクリックされた時の処理
-    menu_list.click(function(){
-        var scroll_point = $(this).innerHeight();
+    //pull_down処理
+    $('span').click(function(){
+        if($(this).attr('class') == 'menu_child'){
+            //メニュー非表示
+            $(this).removeClass('menu_child').next('ul').slideUp('fast');
+        } else {
+            //メニュー表示
+            $(this).addClass('menu_child').next('ul').slideDown('fast');
+        }
     });
     $(".js_menu").on('click', function(){
         body.removeClass('side_open');
+        $('span').removeClass('menu_child');
         $("#side_menu").hide();
+        $('.child').hide();
     });
 });
