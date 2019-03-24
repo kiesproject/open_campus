@@ -1,6 +1,6 @@
 window.onload = function () {
     try {
-        setInterval(dropBlossom, 1000);
+        setInterval(dropBlossom, 2000);
     }
     catch (e) {
         console.log(e);
