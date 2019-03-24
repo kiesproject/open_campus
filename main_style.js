@@ -1,17 +1,17 @@
 window.onload = function () {
     try {
-        setInterval(dropBlossom, 700);
+        setInterval(dropBlossom, 1000);
     }
     catch (e) {
         console.log(e);
     }
 }
 function dropBlossom() {
-    var fallen_right_dist = document.body.scrollWidth;
+    var fallen_right_dist = window.innerWidth;
     var fallen_down_dist = fallen_right_dist * 3;
-    var fallen_duration = (fallen_down_dist / 150) * 1000; //落ちる時間＝150px毎に1000[ms]
-    //-fallen_down_dist[px]～document.body.scrollWidht[px]までのランダムな値
-    var first_top_offset = Math.random()*(fallen_down_dist + document.body.scrollHeight) - fallen_down_dist;
+    var fallen_duration = (fallen_down_dist / 100) * 1000; //落ちる時間＝150px毎に1000[ms]
+    //-fallen_down_dist[px]～window.innerHeight[px]までのランダムな値
+    var first_top_offset = Math.random()*(fallen_down_dist +  window.innerHeight) - fallen_down_dist;
 
 
     $('#blossom_area')
