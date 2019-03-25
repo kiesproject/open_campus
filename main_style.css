@@ -247,6 +247,18 @@ section setting
 }
 
 /*--------
+overall section setting
+--------*/
+#overall {
+    text-align: center;
+}
+
+#overall img{
+    height: 600px;
+}
+
+
+/*--------
 times section setting
 --------*/
 #table_memo {
