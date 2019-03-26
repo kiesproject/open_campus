@@ -1,0 +1,188 @@
+#overlay{
+    content: '';
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 3;
+}
+#overlay::after{
+    content: "CLOSE";
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    right: 10%;
+    display: block;
+    width: 100%;
+    height:50px;
+    color: rgba(255,255,255,0);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.side_open #overlay{
+    visibility: visible;
+    cursor: pointer;
+    background: rgba(0,0,0,.7);
+}
+.side_open #overlay::after{
+    visibility: visible;
+    color: rgba(255,255,255,.8);
+}
+
+/* サイドメニュー */
+#side_menu{
+    position: fixed;
+    top: 0;
+    left: -24px;
+    width: 370px;
+    height: 100%;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 70px;
+
+    color: #fff;
+    background: #2A408E;    
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+/* 開閉用ボタン */
+#side_menu_btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.ellipsis_v{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.ellipsis_v .point{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    background:#161616;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.ellipsis_v .point.top{
+    top: 0;
+}
+
+.ellipsis_v .point.mid{
+    top: 0;
+    bottom: 0;
+}
+
+.ellipsis_v .point.bot{
+    bottom: 0;
+}
+
+#side_menu_btn:hover .top{
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+#side_menu_btn:hover .bot{
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.side_open #side_menu_btn:hover .top,
+.side_open .top{
+    width: 56px;
+    height: 1px;
+    background: #fff;
+    -webkit-transform-origin:left top;
+    -ms-transform-origin:left top;
+    transform-origin: rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.side_open .mid{
+    opacity: 0;
+}
+
+.side_open #side_menu_btn:hover .bot,
+.side_open .bot{
+    width: 56px;
+    height: 1px;
+    background: #fff;
+    -webkit-transform-origin:left bottom;
+    -ms-transform-origin:left bottom;
+    transform-origin: left bottom;
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.side_open #side_menu_btn:hover .bot,
+.side_open #sied_menu_btn:hover .top{
+    background: #ccc;
+}
+
+#menu_list a{
+    color:white;
+    text-decoration: none;
+}
+
+#menu_list li{
+    list-style: none;
+}
+
+.menu_dt span{
+    font-weight: bold;
+}
+
+.menu_dt span::after{
+    content: " +";
+    color: #ffd800;
+
+}
+
+.menu_dt .menu_child::after{
+    content: " -";
+    color: #ffd800;
+}
+
+.menu_dt li{
+    font-size: 24px; 
+}
+
+.menu_dt ul{
+    display: none;
+}
+
+/* サイドメニューオープン */
+.side_open #overlay{
+    -webkit-transform: translate3d(370px, 0, 0);
+    transform: translate3d(345px, 0, 0);
+}
