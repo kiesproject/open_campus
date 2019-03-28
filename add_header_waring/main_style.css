@@ -146,9 +146,11 @@ header {
     width: 15%;
     position: relative;
     top: 15px;
-    right: 25%;
+    right: 27%;
 }
-
+#warning{
+    font-weight: bold;
+}
 
 /*--------
 section setting
