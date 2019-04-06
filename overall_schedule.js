@@ -1,13 +1,12 @@
 $(function(){
     var overall_title = '#overall .section_title';
-    var overall = '.overall_schedule .pulldown_content'
-    $(overall_title).click(overall_pulldown);
+    var overall = overall_title + ' .pulldown_content';
+    
     $(overall).hide();
+    $(overall_title).click(overall_pulldown);
 });
 
 function overall_pulldown(){
-    //$(this).css('color','red');
-    var overall_path = '.overall_schedule';
-    var obj = $(overall_path);
+    var obj = $(this);
     show_content(obj);
 }

@@ -253,8 +253,13 @@ overall section setting
     text-align: center;
 }
 
-#overall img{
-    
+#overall .icon{
+    position: relative; left: 17px; bottom: 12px;
+}
+
+#overall .pulldown_content{
+    width: 150%;
+    position: relative; right: 85px;
 }
 
 
