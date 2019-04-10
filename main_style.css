@@ -247,6 +247,23 @@ section setting
 }
 
 /*--------
+overall section setting
+--------*/
+#overall {
+    text-align: center;
+}
+
+#overall .icon{
+    position: relative; left: 17px; bottom: 12px;
+}
+
+#overall .pulldown_content{
+    width: 150%;
+    position: relative; right: 85px;
+}
+
+
+/*--------
 times section setting
 --------*/
 #table_memo {
