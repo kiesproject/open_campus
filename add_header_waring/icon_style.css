@@ -1,0 +1,27 @@
+/* .timeTable{
+    padding: 0px 5px;
+    border-collapse: collapse;
+}
+
+.timeTable td{
+    border: solid 1px black;
+    vertical-align: text-top;
+}
+
+td > ul{
+    margin: 3px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+td > p {
+    margin: 3px;
+    padding-right: 30px;
+} */
+
+.icon{
+    float: right;
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+}
