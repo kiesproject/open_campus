@@ -34,6 +34,12 @@ body {
     background-color: #6b7da8;
 }
 
+.thead_normal{
+    background-color: #1D4874;
+}
+
+
+
 h1 .underline {
     border-bottom: 20px solid #ffc8c7;
     /*underline*/
