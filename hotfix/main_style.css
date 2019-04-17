@@ -258,6 +258,12 @@ section setting
 /*--------
 model_courses section setting
 --------*/
+#model_courses p{
+    font-size: 20px;
+}
+#model_courses table{
+    margin-bottom: 40px;
+}
 #model_courses ul{
     list-style: none;
 }
@@ -267,6 +273,30 @@ model_courses section setting
 
 .model_course table tr td:nth-child(2){
     width : 10%;
+}
+.model_course ul {
+    padding : 0;
+}
+.model_course ul li {
+    padding: 10px;
+    margin: 15px;
+}
+.model_course:nth-child(2) ul li {
+    background-color: #fffac0;
+}
+.model_course:nth-child(3) ul li {
+    background-color: #d4ebdd;
+}
+.model_course ul li span{
+    display: block;
+}
+.model_course ul li small{
+    display: block;
+}
+.model_course ul li div{
+    display: block;
+    padding-top: 10px;
+    text-align: right;
 
 }
 
