@@ -389,6 +389,15 @@ event_table setting
 }
 
 /*--------
+recall buss setting
+--------*/
+#buss_warning {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/*--------
 blossom setting
 --------*/
 #blossom_area{
