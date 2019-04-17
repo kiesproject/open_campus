@@ -1,5 +1,5 @@
 $(function(){
-    var overall_title = '#event_table';
+    var overall_title = '#event_table table tbody tr';
     var overall = overall_title + ' .pulldown_content';
     
     $(overall).hide();
