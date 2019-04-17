@@ -256,9 +256,19 @@ section setting
     line-height: 24px;
 }
 /*--------
-model_course section setting
+model_courses section setting
 --------*/
+#model_courses ul{
+    list-style: none;
+}
+.model_course table tr td:nth-child(1){
+    width : 90%;
+}
 
+.model_course table tr td:nth-child(2){
+    width : 10%;
+
+}
 
 /*--------
 overall section setting

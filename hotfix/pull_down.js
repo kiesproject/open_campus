@@ -2,6 +2,10 @@ $(function(){
     pulldown_tr = '.section_info table tbody tr';
     $(pulldown_tr + ' .pulldown_content').hide();
     $(pulldown_tr).click(pulldown);
+
+    model_course_div = "#model_courses .model_course"
+    $(model_course_div + ' .pulldown_content').hide();
+    $(model_course_div).click(pulldown);
 });
 
 function pulldown(){
