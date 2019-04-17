@@ -255,6 +255,10 @@ section setting
 .section_inner table p {
     line-height: 24px;
 }
+/*--------
+model_course section setting
+--------*/
+
 
 /*--------
 overall section setting
@@ -383,9 +387,9 @@ footer h2 {
 event_table setting
 
 --------*/
-#event_table > image{
-    height: 50px;
-    width: 20px;
+#class_room .pulldown_content,
+#event_table .pulldown_content{
+    width:100%
 }
 
 /*--------
