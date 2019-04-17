@@ -92,6 +92,7 @@ html {}
 body{
 }
 
+
 /*--------
 header setting
 --------*/
@@ -377,6 +378,14 @@ footer h2 {
     width: 50px;
     position: relative;
     top: 7px;
+}
+/*--------
+event_table setting
+
+--------*/
+#event_table > image{
+    height: 50px;
+    width: 20px;
 }
 
 /*--------
