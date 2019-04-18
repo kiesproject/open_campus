@@ -34,6 +34,12 @@ body {
     background-color: #6b7da8;
 }
 
+.thead_normal{
+    background-color: #1D4874;
+}
+
+
+
 h1 .underline {
     border-bottom: 20px solid #ffc8c7;
     /*underline*/
@@ -85,6 +91,7 @@ html {}
 
 body{
 }
+
 
 /*--------
 header setting
@@ -248,6 +255,50 @@ section setting
 .section_inner table p {
     line-height: 24px;
 }
+/*--------
+model_courses section setting
+--------*/
+#model_courses p{
+    font-size: 20px;
+}
+#model_courses table{
+    margin-bottom: 40px;
+}
+#model_courses ul{
+    list-style: none;
+}
+.model_course table tr td:nth-child(1){
+    width : 90%;
+}
+
+.model_course table tr td:nth-child(2){
+    width : 10%;
+}
+.model_course ul {
+    padding : 0;
+}
+.model_course ul li {
+    padding: 10px;
+    margin: 15px;
+}
+.model_course:nth-child(2) ul li {
+    background-color: #fffac0;
+}
+.model_course:nth-child(3) ul li {
+    background-color: #d4ebdd;
+}
+.model_course ul li span{
+    display: block;
+}
+.model_course ul li small{
+    display: block;
+}
+.model_course ul li div{
+    display: block;
+    padding-top: 10px;
+    text-align: right;
+
+}
 
 /*--------
 overall section setting
@@ -371,6 +422,14 @@ footer h2 {
     width: 50px;
     position: relative;
     top: 7px;
+}
+/*--------
+event_table setting
+
+--------*/
+#class_room .pulldown_content,
+#event_table .pulldown_content{
+    width:100%
 }
 
 /*--------
