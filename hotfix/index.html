@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="side_menu.css">
     <link type="text/css" rel="stylesheet" href="icon_style.css">
 
-    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet"/>
 
 
     <script type="text/javascript" src="main_style.js"></script>
@@ -23,630 +23,754 @@
 </head>
 
 <body>
-    <div id="blossom_area"></div>
-    <!--header始まり    -->
-    <header>
-        <div id="title_area">
+<div id="blossom_area"></div>
+<!--header始まり    -->
+<header>
+    <div id="title_area">
 
-            <img id="oc_day" src="./image/oc_day_grey.png">
-            <br>
-            <h1>KIT 金沢工業大学 OPEN CAMPUS 2019春　
-                <div class="underline" />
-            </h1>
-            <br>
-            <h3>春のオープンキャンパス
-                <div class="underline" />
-            </h3>
-            <br>
-            <small id="warning">*スマートフォンの簡易表示機能を使用すると正しく表示されない可能性があります</small>
+        <img id="oc_day" src="./image/oc_day_grey.png">
+        <br>
+        <h1>KIT 金沢工業大学 OPEN CAMPUS 2019春　
+            <div class="underline"/>
+        </h1>
+        <br>
+        <h3>春のオープンキャンパス
+            <div class="underline"/>
+        </h3>
+        <br>
+        <small id="warning">*スマートフォンの簡易表示機能を使用すると正しく表示されない可能性があります</small>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="side_menu_btn">
+        <div class="ellipsis_v">
+            <span class="point top"></span>
+            <span class="point mid"></span>
+            <span class="point bot"></span>
         </div>
-        <div id="overlay"></div>
+    </div>
 
-        <div id="side_menu_btn">
-            <div class="ellipsis_v">
-                <span class="point top"></span>
-                <span class="point mid"></span>
-                <span class="point bot"></span>
-            </div>
-        </div>
-
-        <nav style="display: none" id="side_menu">
-            <ul id="menu_list">
+    <nav style="display: none" id="side_menu">
+        <ul id="menu_list">
+            <li>
+                <a href="#model_courses" class="js_menu">モデルコース</a>
+            </li>
+            <li>
+                <a href="#times" class="js_menu">学科別スケジュール</a>
+            </li>
+            <ul class="menu_dt">
                 <li>
-                    <a href="#times" class="js_menu">学科別スケジュール</a>
-                </li>
-                <ul class="menu_dt">
-                    <li>
                         <span>
                             工学部
                         </span>
-                        <ul class="child">
-                            <li>
-                                <a href="#menu_em" class="js_menu">機械工学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_ea" class="js_menu">航空システム学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_er" class="js_menu">ロボティクス工学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_ee" class="js_menu">電気電子工学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_ep" class="js_menu">情報工学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_ve" class="js_menu">環境土木工学科</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                    <ul class="child">
+                        <li>
+                            <a href="#menu_em" class="js_menu">機械工学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_ea" class="js_menu">航空システム学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_er" class="js_menu">ロボティクス工学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_ee" class="js_menu">電気電子工学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_ep" class="js_menu">情報工学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_ve" class="js_menu">環境土木工学科</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                         <span>
                             情報フロンティア学部
                         </span>
-                        <ul class="child">
-                            <li>
-                                <a href="#menu_fm" class="js_menu">メディア情報学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_fs" class="js_menu">経営情報学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_fp" class="js_menu">心理科学科</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                    <ul class="child">
+                        <li>
+                            <a href="#menu_fm" class="js_menu">メディア情報学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_fs" class="js_menu">経営情報学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_fp" class="js_menu">心理科学科</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                         <span>
                             建築学部
                         </span>
-                        <ul class="child">
-                            <li>
-                                <a href="#menu_va" class="js_menu">建築学科</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                    <ul class="child">
+                        <li>
+                            <a href="#menu_va" class="js_menu">建築学科</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                         <span>
                             バイオ・化学部
                         </span>
-                        <ul class="child">
-                            <li>
-                                <a href="#menu_bc" class="js_menu">応用化学科</a>
-                            </li>
-                            <li>
-                                <a href="#menu_bb" class="js_menu">応用バイオ学科</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <li>
-                    <a href="#class_room" class="js_menu">学科別教室の場所</a>
+                    <ul class="child">
+                        <li>
+                            <a href="#menu_bc" class="js_menu">応用化学科</a>
+                        </li>
+                        <li>
+                            <a href="#menu_bb" class="js_menu">応用バイオ学科</a>
+                        </li>
+                    </ul>
                 </li>
-                <ul class="menu_dt">
-                    <li>
-                        <a href="#menu_engineer" class="js_menu">工学部</a>
-                    </li>
+            </ul>
+            <li>
+                <a href="#class_room" class="js_menu">学科別教室の場所</a>
+            </li>
+            <ul class="menu_dt">
+                <li>
+                    <a href="#menu_engineer" class="js_menu">工学部</a>
+                </li>
 
-                    <li>
-                        <a href="#menu_frontier" class="js_menu">情報フロンティア学部</a>
-                    </li>
-                    <li>
-                        <a href="#menu_architecture" class="js_menu">建築学部</a>
-                    </li>
-                    <li>
-                        <a href="#menu_bio" class="js_menu">バイオ・科学部</a>
-                    </li>
-                </ul>
                 <li>
-                    <a href="#kit_map" class="js_menu">扇が丘キャンパス全体マップ</a>
+                    <a href="#menu_frontier" class="js_menu">情報フロンティア学部</a>
                 </li>
                 <li>
-                    <a href="#event_table" class="js_menu">イベントのご案内</a>
+                    <a href="#menu_architecture" class="js_menu">建築学部</a>
+                </li>
+                <li>
+                    <a href="#menu_bio" class="js_menu">バイオ・科学部</a>
                 </li>
                 <li>
                     <a href="#recall_buss" class="js_menu">お帰りバスの時刻表</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+            <li>
+                <a href="#kit_map" class="js_menu">扇が丘キャンパス全体マップ</a>
+            </li>
+            <li>
+                <a href="#event_table" class="js_menu">イベントのご案内</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <!--header 終わり  -->
-    <div id="container">
-        <section id="overall">
-            <!-- 全体スケジュールセクション -->
-            <div class="section_inner">
-                <h2 class="section_title">全体スケジュール<br>
-                    <!-- 全体スケジュールセクション -->
-                    <div class="underline" />
-                    <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                    <img class="pulldown_content" src="./image/overall_schedule.png" title="全体スケジュール">
-                </h2>
+<!--header 終わり  -->
+<div id="container">
+    <section id="model_courses">
+        <!-- モデルコースセクション -->
+        <div class="section_inner">
+            <h2 class="section_title">モデルコース<br>
+                <div class="underline"/>
+            </h2>
+            <div class>
+            <p>オープンキャンパスを楽しむためのおすすめモデルコースです。</p>
+            <div class="model_course">
+                <table>
+                    <thead class="thead_normal">
+                    <tr>
+                        <th>高校生 <small>向けモデルコース</small></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span>
+                            自分が学びたい分野を見つけるため、<br>
+                            学科のプログラムを中心に回るのがおすすめ。<br>
+                            空き時間で、夢考房プロジェクト紹介や、<br>
+                            部活動・サークル紹介なども巡ってみよう。
+                            </span>
+                            <img class="icon" src="./image/icon.png">
+                            <ul class="pulldown_content">
+                                <li>
+                                    <span>受付から、興味のある学科の会場へ</span>
+                                </li>
+                                <li>
+                                    <span>オープニングスピーチ、KIT紹介</span>
+                                    <small>※すべての学科の会場へ中継されます</small>
+                                    <div>10:10～10:30</div>
+                                </li>
+                                <li>
+                                    <span>学科紹介に参加</span>
+                                    <div>学科紹介　10:35～11:15</div>
+                                </li>
+                                <li>
+                                    <span>レストランでランチ体験</span>
+                                    <div>11:00～14:00</div>
+                                    <div>ランチ体験　21号館</div>
+                                </li>
+                                <li>
+                                    <span>入試説明会で入学試験について知る</span>
+                                    <div>入試説明会　23号館・2階／23.221</div>
+                                    <div>①11:40～12:10 ②12:20～12:50</div>
+                                </li>
+                                <li>
+                                    <span>学科体験に参加</span>
+                                    <div>学科体験　13:00～14:30</div>
+                                </li>
+                                <li>
+                                    <span>アンケートに答えて、<br>キャンパスグッズ交換コーナーでグッズと交換</span>
+                                    <div>キャンパスグッズ交換コーナー　7号館2階</div>
+                                </li>
+                                <li>
+                                    <span>お帰りバスは14:50に出発</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-        </section>
 
-        <section id="times">
-            <!--  タイムスケジュールセクション    -->
-            <div class="section_inner">
-                <h2 class="section_title">学科別スケジュール<br>
-                    <!--  タイムスケジュールセクション    -->
-                    <div class="underline" />
-                </h2>
-                <div id="table_memo">
-                    <div>イベントを押すと<br>詳細が表示されるよ！</div>
-                </div>
-                <ul class="section_info">
-                    <div>
-                        <h3>工学部</h3>
-                        <table border="1">
-                            <caption id="menu_em">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/kikai/index.html">機械工学科</a>
 
-                                <a href="#map_em">教室：7.201</a>
+            <div class="model_course">
+                <table>
+                    <thead class="thead_normal">
+                    <tr>
+                        <th>保護者 <small>向けモデルコース</small></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span>
+                            保護者向けに開催される2つのプログラムにはぜひ<br>
+                            ご参加ください。寮·アパート紹介、就職·進路紹介。<br>
+                            資格紹介などのコーナーも回ってみてください。
+                            </span>
+                            <img class="icon" src="./image/icon.png">
+                            <ul class="pulldown_content">
+                                <li>
+                                    <span>受付から、保護者説明会の会場へ</span>
+                                </li>
+                                <li>
+                                    <span>オープニングスピーチ、KIT紹介</span>
+                                    <small>※保護者説明会の会場へ中継されます</small>
+                                    <div>10:00～10:30</div>
+                                </li>
+                                <li>
+                                    <span>保護者説明会で金沢工業大学の<br>教育について知る</span>
+                                    <div>10:40～11:30</div>
+                                    <div>保護者説明会　23号館・2階／23.221</div>
+                                </li>
+                                <li>
+                                    <span>レストランでランチ体験</span>
+                                    <div>11:00～14:00</div>
+                                    <div>ランチ体験 21号館</div>
+                                </li>
+                                <li>
+                                    <span>寮·アパート紹介や就職·進路紹介の<br>コーナーを巡る</span>
+                                    <div>寮·アパート紹介　23館・2階／23.221</div>
+                                    <div>就職・進路紹介　23号館·1階</div>
+                                </li>
+                                <li>
+                                    <span>保護者のためのキャンパスツアーで<br>学生サポート施設を中心に見学</span>
+                                    <div>13:15～14:30</div>
+                                    <div>保護者のためのキャンパスツアー　23号館·2階／23.221</div>
+                                </li>
+                                <li>
+                                    <span>お帰りバスは14:50に出発</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>機械工学科ってどんなとこ？</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
-                                        <span>Youは何しにKIKAIへ？</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            機械工学はものづくりの「夢の泉」。
-                                            約1000日の学びから新４年生が見つけた機械工学の「種」について聞いてみよう！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+    <section id="overall">
+        <!-- 全体スケジュールセクション -->
+        <div class="section_inner">
+            <h2 class="section_title">全体スケジュール<br>
+                <!-- 全体スケジュールセクション -->
+                <div class="underline"/>
+                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                <img class="pulldown_content" src="./image/overall_schedule.png" title="全体スケジュール">
+            </h2>
+        </div>
+    </section>
 
-                        <table border="1">
-                            <caption id="menu_ea">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/koku/index.html">航空システム工学科</a>
-                                <a href="#map_ea">教室：24.112</a>
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+    <section id="times">
+        <!--  タイムスケジュールセクション    -->
+        <div class="section_inner">
+            <h2 class="section_title">学科別スケジュール<br>
+                <div class="underline"/>
+            </h2>
+            <div id="table_memo">
+                <div>イベントを押すと<br>詳細が表示されるよ！</div>
+            </div>
+            <ul class="section_info">
+                <div>
+                    <h3>工学部</h3>
+                    <table border="1">
+                        <caption id="menu_em">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/kikai/index.html">機械工学科</a>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>航空を学ぶなら金沢工業大学へ！</span>
+                            <a href="#map_em">教室：7.201</a>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>機械工学科ってどんなとこ？</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
+                                <span>Youは何しにKIKAIへ？</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    機械工学はものづくりの「夢の泉」。
+                                    約1000日の学びから新４年生が見つけた機械工学の「種」について聞いてみよう！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table border="1">
+                        <caption id="menu_ea">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/koku/index.html">航空システム工学科</a>
+                            <a href="#map_ea">教室：24.112</a>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>航空を学ぶなら金沢工業大学へ！</span>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             実験授業で航空機について学ぼう！
                                         </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            航空工学には欠かせない流体力学の実験を体験してみよう。
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>11：15 ～ 14：30</td>
-                                    <td>
-                                        <span>大型旅客機シミュレータで操縦体験</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            学部３年生は、大型旅客機シュミレータを用いて、演習科目の仕上げを行います。
-                                            このリアルなフライトシュミレータで操縦を体験してみよう。
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>11：15 ～ 14：30</td>
-                                    <td>
-                                        <span>実物の航空機を用いた体験講義</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            初等練習機T3や観測ヘリコプターOH6の実物に触れながら、
-                                            航空機の構造や飛行原理の講義を体験してみよう。
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    航空工学には欠かせない流体力学の実験を体験してみよう。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11：15 ～ 14：30</td>
+                            <td>
+                                <span>大型旅客機シミュレータで操縦体験</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    学部３年生は、大型旅客機シュミレータを用いて、演習科目の仕上げを行います。
+                                    このリアルなフライトシュミレータで操縦を体験してみよう。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11：15 ～ 14：30</td>
+                            <td>
+                                <span>実物の航空機を用いた体験講義</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    初等練習機T3や観測ヘリコプターOH6の実物に触れながら、
+                                    航空機の構造や飛行原理の講義を体験してみよう。
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_er">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/robo/index.html">ロボティクス学科</a>
+                    <table border="1">
+                        <caption id="menu_er">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/robo/index.html">ロボティクス学科</a>
 
-                                <a href="#map_er">教室：23.102</a>
+                            <a href="#map_er">教室：23.102</a>
 
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
                                         <span>
                                             次代を切り拓く新しいロボティクス
                                         </span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
-                                        <span>ロボット掃除機をプログラミングしてみよう！</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            ロボット掃除機は、ロボットが実用化された一つの例です。
-                                            ロボットの機能をパソコンでプログラミングして確かめてみよう！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
+                                <span>ロボット掃除機をプログラミングしてみよう！</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    ロボット掃除機は、ロボットが実用化された一つの例です。
+                                    ロボットの機能をパソコンでプログラミングして確かめてみよう！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_ee">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/denki/index.html">電気電子工学科</a>
-                                <a href="#map_ee">教室：7.203</a>
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                    <table border="1">
+                        <caption id="menu_ee">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/denki/index.html">電気電子工学科</a>
+                            <a href="#map_ee">教室：7.203</a>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>電気電子工学科 学科・研究紹介</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>電気電子工学科 学科・研究紹介</span>
 
-                                    </td>
-                                </tr>
+                            </td>
+                        </tr>
 
-                                <tr>
-                                    <td>13：00 ～ 13：20</td>
-                                    <td>
-                                        <span>電気電子工学科 学科紹介</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            学科の特長、勉強内容、研究設備、進路(大学院進学、就職)、取得できる資格等について教員から説明します。質問も大歓迎！
-                                        </p>
-                                    </td>
-                                </tr>
+                        <tr>
+                            <td>13：00 ～ 13：20</td>
+                            <td>
+                                <span>電気電子工学科 学科紹介</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    学科の特長、勉強内容、研究設備、進路(大学院進学、就職)、取得できる資格等について教員から説明します。質問も大歓迎！
+                                </p>
+                            </td>
+                        </tr>
 
-                                <tr>
-                                    <td>13：20 ～ 14：30</td>
-                                    <td>
-                                        <span>電気電子工学科の充実した実験設備の紹介</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            全国の大学でも有数の充実した実験設備を見てみよう。
-                                            落雷の仕組み、電波や音の伝わるメカニズム、半導体デバイスを知ろう！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
+                        <tr>
+                            <td>13：20 ～ 14：30</td>
+                            <td>
+                                <span>電気電子工学科の充実した実験設備の紹介</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    全国の大学でも有数の充実した実験設備を見てみよう。
+                                    落雷の仕組み、電波や音の伝わるメカニズム、半導体デバイスを知ろう！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
 
-                        </table>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_ep">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/joho/index.html">情報工学科</a>
-                                <a href="#map_ep">教室：7.202</a>
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                    <table border="1">
+                        <caption id="menu_ep">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/joho/index.html">情報工学科</a>
+                            <a href="#map_ep">教室：7.202</a>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>情報技術(IoT,AI,VR)によって導かれる未来の予測</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>情報技術(IoT,AI,VR)によって導かれる未来の予測</span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
-                                        <span>AI(人口知能)と自動運転技術</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            スマートスピーカーや将棋で注目されているAIについて紹介し、応用としてロボットの自律走行プログラミング体験を行います。
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
+                                <span>AI(人口知能)と自動運転技術</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    スマートスピーカーや将棋で注目されているAIについて紹介し、応用としてロボットの自律走行プログラミング体験を行います。
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_ve">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/kankyo_doboku/index.html">環境土木工学科</a>
-                                <a href="#map_ve">教室：7.115</a>
-                            </caption>
-                            <thead class="thead_engineering">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                    <table border="1">
+                        <caption id="menu_ve">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kogaku/kankyo_doboku/index.html">環境土木工学科</a>
+                            <a href="#map_ve">教室：7.115</a>
+                        </caption>
+                        <thead class="thead_engineering">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
                                         <span>
                                             未来のまちづくりを担う環境土木学科
                                         </span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             人を守る・まちを造る 環境土木の学科体験
 
                                         </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            生活を豊かにし、災害から人を守り、自然と調和する。市民を幸せにする環境土木工学の魅了を実験を通して紹介します
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <h3>情報フロンティア学部</h3>
-                        <table border="1">
-                            <caption id="menu_fm">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/media/index.html">メディア情報学科</a>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    生活を豊かにし、災害から人を守り、自然と調和する。市民を幸せにする環境土木工学の魅了を実験を通して紹介します
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h3>情報フロンティア学部</h3>
+                    <table border="1">
+                        <caption id="menu_fm">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/media/index.html">メディア情報学科</a>
 
-                                <a href="#map_fm">教室：7.204</a>
+                            <a href="#map_fm">教室：7.204</a>
 
-                            </caption>
-                            <thead class="thead_infomatics">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                        </caption>
+                        <thead class="thead_infomatics">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>メディア情報の学びと研究、進路を知ろう！</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>メディア情報の学びと研究、進路を知ろう！</span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             ヴァーチャルとリアルを融合、メディアの先端技術体験！
                                         </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            写真から3DCGをつくり、スマホのAR技術で現実空間を出現させる体験学習！
-                                            デジタルメディアを活用し、次代の表現を創造しよう。
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    写真から3DCGをつくり、スマホのAR技術で現実空間を出現させる体験学習！
+                                    デジタルメディアを活用し、次代の表現を創造しよう。
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
 
-                        </table>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_fs">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/keiei/index.html">経営情報学科</a>
-                                <a href="#map_fs">教室：7.303</a>
-                            </caption>
-                            <thead class="thead_infomatics">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                    <table border="1">
+                        <caption id="menu_fs">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/keiei/index.html">経営情報学科</a>
+                            <a href="#map_fs">教室：7.303</a>
+                        </caption>
+                        <thead class="thead_infomatics">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>学科紹介と学生による各研究室紹介・相談会</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>学科紹介と学生による各研究室紹介・相談会</span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             カードゲームでイノベーション力を高めよう！
                                             ～社会課題を楽しみながら解決する～
                                         </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            国連ＳＤＧｓに貢献する日本一の大学に選ばれた
-                                            ＫＩＴのオリジナルＳＤＧｓカードゲームを体験して、課題解決能力を高めよう！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    国連ＳＤＧｓに貢献する日本一の大学に選ばれた
+                                    ＫＩＴのオリジナルＳＤＧｓカードゲームを体験して、課題解決能力を高めよう！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
 
-                        </table>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_fp">
+                    <table border="1">
+                        <caption id="menu_fp">
 
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/shinri/index.html">心理科学科</a>
-                                <a href="#map_fp">教室：7.305</a>
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/frontier/shinri/index.html">心理科学科</a>
+                            <a href="#map_fp">教室：7.305</a>
 
-                            </caption>
-                            <thead class="thead_infomatics">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                        </caption>
+                        <thead class="thead_infomatics">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>心の科学って何だろう？～金沢工業大学心理科学学科入門～</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>心の科学って何だろう？～金沢工業大学心理科学学科入門～</span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             心を調べるってどんなこと？
                                         </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            人の心の働きを明らかにする「実験」を学科の学生とチームを組んで体験しよう！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    人の心の働きを明らかにする「実験」を学科の学生とチームを組んで体験しよう！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
 
 
+                    </table>
+                </div>
+                <div>
+                    <h3>建築学部</h3>
+                    <table border="1">
+                        <caption id="menu_va">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kenchiku/kenchiku/index.html">建築学科</a>
+                            <a href="#map_va">教室：23.211</a>
+                        </caption>
+                        <thead class="thead_architecture">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                        </table>
-                    </div>
-                    <div>
-                        <h3>建築学部</h3>
-                        <table border="1">
-                            <caption id="menu_va">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/kenchiku/kenchiku/index.html">建築学科</a>
-                                <a href="#map_va">教室：23.211</a>
-                            </caption>
-                            <thead class="thead_architecture">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>金沢で学ぶ、建築を学ぶ。</span>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>金沢で学ぶ、建築を学ぶ。</span>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
-                                        <span>建築の日々、建築の未来。</span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            日本建築学会賞も受賞した扇が丘キャンパスのツアーです。
-                                            学習環境、授業成果物、研究・プロジェクト活動を紹介します。
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
+                                <span>建築の日々、建築の未来。</span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    日本建築学会賞も受賞した扇が丘キャンパスのツアーです。
+                                    学習環境、授業成果物、研究・プロジェクト活動を紹介します。
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
 
 
-                        </table>
-                    </div>
-                    <div>
-                        <h3>バイオ・化学部</h3>
+                    </table>
+                </div>
+                <div>
+                    <h3>バイオ・化学部</h3>
 
-                        <table border="1">
-                            <caption id="menu_bc">
+                    <table border="1">
+                        <caption id="menu_bc">
 
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/bio_kagaku/kagaku/index.html">応用化学科</a>
-                                <a href="#map_bc">教室：24.117-1</a>
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/bio_kagaku/kagaku/index.html">応用化学科</a>
+                            <a href="#map_bc">教室：24.117-1</a>
 
-                            </caption>
-                            <thead class="thead_bio">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                        </caption>
+                        <thead class="thead_bio">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
-                                        <span>大学で学ぶ化学、高校の化学とどう違うの？</span>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
+                                <span>大学で学ぶ化学、高校の化学とどう違うの？</span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
-                                        <span>色を操る化学～インディゴの合成と染色～ </span>
-                                        <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
-                                        <p class="pulldown_content">
-                                            大学の実験設備を使い、深藍色の染料であるインディゴを合成します。さらに、合成したインディゴで「藍染め」に挑戦！
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
+                                <span>色を操る化学～インディゴの合成と染色～ </span>
+                                <img class="icon" src="./image/icon.png" width="25px" height="25px"><br>
+                                <p class="pulldown_content">
+                                    大学の実験設備を使い、深藍色の染料であるインディゴを合成します。さらに、合成したインディゴで「藍染め」に挑戦！
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                        <table border="1">
-                            <caption id="menu_bb">
-                                <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/bio_kagaku/bio/index.html">応用バイオ学科</a>
-                                <a href="#map_bb">教室：24.101</a>
-                            </caption>
-                            <thead class="thead_bio">
-                                <tr>
-                                    <th>時間</th>
-                                    <th>イベント</th>
-                                </tr>
-                            </thead>
+                    <table border="1">
+                        <caption id="menu_bb">
+                            <a href="https://www.kanazawa-it.ac.jp/gakubu_daigakuin/bio_kagaku/bio/index.html">応用バイオ学科</a>
+                            <a href="#map_bb">教室：24.101</a>
+                        </caption>
+                        <thead class="thead_bio">
+                        <tr>
+                            <th>時間</th>
+                            <th>イベント</th>
+                        </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>10：35 ～ 11：15</td>
-                                    <td>
+                        <tbody>
+                        <tr>
+                            <td>10：35 ～ 11：15</td>
+                            <td>
                                         <span>
                                             応用バイオ学科で、やりたいこと、見つけよう！
                                         </span>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13：00 ～ 14：30</td>
-                                    <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13：00 ～ 14：30</td>
+                            <td>
                                         <span>
                                             カビのつくる化粧品を検出してみよう！
                                         </span>
@@ -1228,13 +1352,12 @@
 
                     </tbody>
                 </table>
+        </div>
+    </section>
 
-            </div>
-        </section>
+    <section id="kit_map">
 
-        <section id="kit_map">
-
-            <div class="section_inner">
+        <div class="section_inner">
 
                 <h2>扇が丘キャンパス全体マップ
                     <div class="underline" />
