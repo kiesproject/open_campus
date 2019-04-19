@@ -240,9 +240,14 @@ section setting
 
 .section_inner table thead tr {}
 
-.section_inner table th,
+.section_inner table th{
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
 .section_inner table td {
-    width: 50%;
+    width: 70%;
     padding: 15px;
     border: 1px solid #000;
 }
@@ -435,11 +440,24 @@ event_table setting
 /*--------
 recall buss setting
 --------*/
-#buss_warning {
-    font-size: large;
+#recall_buss table{
     font-weight: bold;
 }
 
+#buss_warning {
+    font-size: large;
+    font-weight: bold; 
+}
+    
+}
+
+/*--------
+next_oc setting
+--------*/
+#next_oc p{
+    font-size: xx-large;
+    font-weight: bold;
+}
 
 /*--------
 blossom setting
