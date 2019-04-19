@@ -352,12 +352,14 @@ times section setting
     width: 50%;
     padding: 15px;
     border: 1px solid #000;
+    
 }
 
 #times .section_inner table td {
     width: 50%;
     padding: 15px;
     border: 1px solid #000;
+    font-weight: bold;
 }
 
 /*--------
