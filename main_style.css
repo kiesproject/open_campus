@@ -241,13 +241,13 @@ section setting
 .section_inner table thead tr {}
 
 .section_inner table th{
-    width: 35%;
+    width: 30%;
     padding: 15px;
     border: 1px solid #000;
 }
 
 .section_inner table td {
-    width: 65%;
+    width: 70%;
     padding: 15px;
     border: 1px solid #000;
 }
