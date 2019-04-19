@@ -476,8 +476,8 @@ recall buss setting
 /*--------
 next_oc setting
 --------*/
-#next_oc p{
-    font-size: xx-large;
+#summer_oc{
+    font-size: x-large;
     font-weight: bold;
 }
 
