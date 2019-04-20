@@ -286,9 +286,6 @@ model_courses section setting
     padding: 10px;
     margin: 15px;
 }
-.model_course:nth-child(2) ul li {
-    background-color: #fffac0;
-}
 
 .model_course:nth-child(3) ul li {
    background-color: #fffac0;
