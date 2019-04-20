@@ -289,8 +289,12 @@ model_courses section setting
 .model_course:nth-child(2) ul li {
     background-color: #fffac0;
 }
+
 .model_course:nth-child(3) ul li {
-    background-color: #d4ebdd;
+   background-color: #fffac0;
+}
+.model_course:nth-child(4) ul li {
+   background-color: #d4ebdd;
 }
 .model_course ul li span{
     display: block;
