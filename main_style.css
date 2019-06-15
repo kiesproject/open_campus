@@ -309,19 +309,30 @@ model_courses section setting
 /*--------
 overall section setting
 --------*/
-#overall {
-    text-align: center;
-}
 
 #overall .icon{
     position: relative; left: 17px; bottom: 12px;
 }
-
-#overall .pulldown_content{
-    width: 150%;
-    position: relative; right: 85px;
+#overall .pulldown_content table {
+    width: 100%;
+    position: relative;
+    border:1px solid #000;
+    table-layout: fixed;
 }
 
+ #overall .pulldown_content table th {
+    width:50%;
+    padding: 15px;
+    border:1px solid #000;
+    background-color:#1D4874;
+    color: aliceblue;
+    font-size: 40px
+}
+#overall .pulldown_content table td {
+    width:50%;
+    padding: 15px;
+    border:1px solid #000;
+}
 
 /*--------
 times section setting
