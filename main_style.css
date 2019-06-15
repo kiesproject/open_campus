@@ -310,17 +310,14 @@ model_courses section setting
 overall section setting
 --------*/
 
-#overall .icon{
-    position: relative; left: 17px; bottom: 12px;
-}
-#overall .pulldown_content table {
+#overall .section_inner table {
     width: 100%;
     position: relative;
     border:1px solid #000;
-    table-layout: fixed;
+    font-weight: bold;
 }
 
- #overall .pulldown_content table th {
+ #overall .section_inner table th {
     width:50%;
     padding: 15px;
     border:1px solid #000;
@@ -328,7 +325,7 @@ overall section setting
     color: aliceblue;
     font-size: 40px
 }
-#overall .pulldown_content table td {
+#overall .section_inner table td {
     width:50%;
     padding: 15px;
     border:1px solid #000;
