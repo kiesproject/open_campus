@@ -302,35 +302,35 @@ model_courses section setting
 .model_course ul li div{
     display: block;
     padding-top: 10px;
-    text-align: right;
+    float: left
 
 }
 
 /*--------
 overall section setting
---------*/
-
-#overall .section_inner table {
-    width: 100%;
-    position: relative;
-    border:1px solid #000;
+-------*/    
+#overall .program{
+}
+#overall .subject{
+    text-align: left;
+    float: left;
+    font-size: 20px;
     font-weight: bold;
+    margin: 2px 0px
 }
 
- #overall .section_inner table th {
-    width:50%;
-    padding: 15px;
-    border:1px solid #000;
-    background-color:#1D4874;
-    color: aliceblue;
-    font-size: 40px
+#overall .date{
+    font-size:25px;
+    color:#808080;
+    text-align: right;
+    border-bottom:1px solid #C0C0C0;
+    padding-bottom: 0px;
 }
-#overall .section_inner table td {
-    width:50%;
-    padding: 15px;
-    border:1px solid #000;
+#overall .program a{
+    font-size:20px;
+    float: left;
+    margin: 3px 5px
 }
-
 /*--------
 times section setting
 --------*/
